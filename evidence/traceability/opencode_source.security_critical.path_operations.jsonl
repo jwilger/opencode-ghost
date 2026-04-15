@@ -1,0 +1,8 @@
+{"kind":"hello","protocol_version":"0.1.0","implementation_id":"opencode-source","implementation_version":"9640d889baa58fa01ed612a6372ba77462f79d9f"}
+{"kind":"capabilities","supported_profiles":["security-critical"],"supported_transports":["file_path"],"supported_observations":["permission_gate","route_projection"]}
+{"kind":"profile_request","profile_id":"security-critical"}
+{"kind":"profile_response","profile_id":"security-critical","accepted":true}
+{"kind":"case_offer","case_id":"witness.security.path_operations","profile_id":"security-critical","schema_family":"contract.security.case","payload":{"path":"contracts/security/cases/path.operations.json"}}
+{"kind":"case_accept","case_id":"witness.security.path_operations","accepted":true}
+{"kind":"checkpoint","case_id":"witness.security.path_operations","seq":1,"observation_kind":"route_projection","payload":{"required_routes":["file.list","file.read","file.status","find.files","find.text"],"required_claims":[],"route_count":5,"runtime_permission_cycle_status":"pass"}}
+{"kind":"verdict","case_id":"witness.security.path_operations","status":"pass","evidence":"evidence/traceability/commuting.security.path_operations.json"}

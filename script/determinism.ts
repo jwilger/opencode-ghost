@@ -30,12 +30,12 @@ const snap = async () => {
     "tcb-inventory.md",
     ...(await list("evidence/traceability/commuting.runtime.*.json")),
     ...(await list("evidence/traceability/commuting.tui.*.json")),
-    "evidence/traceability/commuting.integrations.providers.json",
-    "evidence/traceability/commuting.security.permission_gating.json",
+    ...(await list("evidence/traceability/commuting.integrations.*.json")),
+    ...(await list("evidence/traceability/commuting.security.*.json")),
     ...(await list("evidence/traceability/opencode_source.runtime_formal.*.jsonl")),
     ...(await list("evidence/traceability/opencode_source.tui_certified.*.jsonl")),
-    "evidence/traceability/opencode_source.integrations_canonical.providers.jsonl",
-    "evidence/traceability/opencode_source.security_critical.permission_gating.jsonl",
+    ...(await list("evidence/traceability/opencode_source.integrations_canonical.*.jsonl")),
+    ...(await list("evidence/traceability/opencode_source.security_critical.*.jsonl")),
   ]
   const out: Record<string, string> = {}
   for (const path of files) out[path] = await hash(path)

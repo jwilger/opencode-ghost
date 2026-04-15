@@ -1,21 +1,21 @@
 {
-  "case_id": "witness.security.permission_gating",
+  "case_id": "witness.security.path_operations",
   "profile_id": "security-critical",
   "observation_space": {
-    "projection": "permission_gating_projection",
+    "projection": "path_operations_projection",
     "equivalence": "exact_json",
     "normalization": "identity"
   },
   "actual": {
     "required_routes": [
-      "permission.reply",
-      "session.prompt"
+      "file.list",
+      "file.read",
+      "file.status",
+      "find.files",
+      "find.text"
     ],
-    "required_claims": [
-      "claim.runtime.pending_waiting",
-      "claim.runtime.approved_idle"
-    ],
-    "route_count": 2,
+    "required_claims": [],
+    "route_count": 5,
     "runtime_permission_cycle_status": "pass"
   },
   "missing_routes": [],

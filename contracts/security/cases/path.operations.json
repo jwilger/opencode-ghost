@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.security.case",
+  "status": "provisional",
+  "case_id": "witness.security.path_operations",
+  "profile_id": "security-critical",
+  "world_id": "world.minimal_repo",
+  "expect": {
+    "kind": "route_projection",
+    "observation_space": {
+      "projection": "path_operations_projection",
+      "equivalence": "exact_json",
+      "normalization": "identity"
+    },
+    "payload": {
+      "required_routes": [
+        "file.list",
+        "file.read",
+        "file.status",
+        "find.files",
+        "find.text"
+      ],
+      "required_claims": []
+    }
+  }
+}
