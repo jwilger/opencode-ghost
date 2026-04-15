@@ -17,8 +17,8 @@
 
 | Type | Count |
 | --- | --- |
-| artifact | 30 |
-| claim | 16 |
+| artifact | 32 |
+| claim | 18 |
 | surface | 5 |
 | profile | 6 |
 | report | 7 |

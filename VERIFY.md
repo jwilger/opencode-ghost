@@ -13,6 +13,8 @@ The default shell provides:
 - `git`
 - `node` (Node 20)
 - `bun`
+- `rustc` / `cargo`
+- `go`
 - `lean` / `lake` (Lean 4)
 - `quint`
 

@@ -19,6 +19,9 @@
             bun
             nodejs_20
             git
+            cargo
+            rustc
+            go
             lean4
             quint
           ];
