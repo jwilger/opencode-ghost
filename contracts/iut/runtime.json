@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "iut.runtime",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap contract for runtime implementations evaluated by the opencode-ghost conformance kit.",
+  "status": "provisional",
+  "summary": "Contract for runtime implementations evaluated by the opencode-ghost conformance kit.",
   "goals": [
     "Define a language-agnostic evaluator boundary for runtime conformance.",
     "Support Rust and non-Rust implementations without JS-specific embedding assumptions.",

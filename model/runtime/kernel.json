@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "model.runtime.kernel",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap semantic kernel for opencode-ghost.",
+  "status": "provisional",
+  "summary": "Semantic kernel for opencode-ghost.",
   "state_axes": [
     "session",
     "event_log",

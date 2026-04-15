@@ -39,7 +39,7 @@ const render = async () => {
     certified: edges.some((x) => x.type === "certifies" && x.to === id),
   }))
   const result = {
-    stage: "bootstrap",
+    stage: "provisional",
     metrics: {
       surfaces,
       commuting_covered_surfaces: surfaces.filter((x) => commutingClaims.has(x)),

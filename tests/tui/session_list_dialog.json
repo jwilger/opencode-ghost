@@ -1,8 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "test.tui.witness",
-  "status": "draft",
-  "bootstrap": true,
+  "status": "provisional",
   "case_id": "witness.tui.session_list_dialog",
   "profile_id": "tui-certified",
   "world_id": "world.minimal_repo",

@@ -63,6 +63,7 @@ const main = async () => {
   await run(["bun", "script/integrations-certify.ts", "--write"])
   await run(["bun", "script/security-commute.ts", "--write"])
   await run(["bun", "script/security-certify.ts", "--write"])
+  await run(["bun", "script/freeze.ts", "--write"])
   await run(["bun", "script/profile-certify.ts", "--write"])
   await run(["bun", "script/consumer-certify.ts", "--write"])
   const after = await snap()

@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "schema.tui_layout",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap schema family for observable TUI layout state independent of exact cell rendering.",
+  "status": "provisional",
+  "summary": "Schema family for observable TUI layout state independent of exact cell rendering.",
   "layout": {
     "required_fields": [
       "case_id",

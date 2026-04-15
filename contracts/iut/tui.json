@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "iut.tui",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap contract for TUI implementations evaluated by the opencode-ghost conformance kit.",
+  "status": "provisional",
+  "summary": "Contract for TUI implementations evaluated by the opencode-ghost conformance kit.",
   "goals": [
     "Define observable TUI conformance without constraining renderer internals.",
     "Support deterministic replay of interaction, layout, and frame checkpoints.",

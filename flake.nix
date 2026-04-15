@@ -1,5 +1,5 @@
 {
-  description = "opencode-ghost bootstrap shell";
+  description = "opencode-ghost development shell";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

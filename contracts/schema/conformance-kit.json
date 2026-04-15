@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "schema.conformance_kit",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap schema family for evaluator handshakes, profile negotiation, case dispatch, checkpoint emission, and verdict reporting.",
+  "status": "provisional",
+  "summary": "Schema family for evaluator handshakes, profile negotiation, case dispatch, checkpoint emission, and verdict reporting.",
   "protocol": {
     "transport": {
       "kind": "enum",

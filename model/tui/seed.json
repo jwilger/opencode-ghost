@@ -1,9 +1,8 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "model.tui.seed",
-  "status": "draft",
-  "bootstrap": true,
-  "summary": "Bootstrap abstract TUI model.",
+  "status": "provisional",
+  "summary": "Abstract TUI model seed.",
   "state_axes": [
     "route",
     "dialog_stack",
