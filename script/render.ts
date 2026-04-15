@@ -120,7 +120,7 @@ const renderMatrix = (rows: Row[]) => {
         `${edges.filter((x) => x.type === "covers" && x.from === profile.id).map((x) => `\`${x.to}\``).join(", ")}`,
         `${required(profile.id).length}`,
         `${certified(profile.id)}`,
-        `\`${certified(profile.id) > 0 ? "provisional" : profile.state}\``,
+        `\`${profile.state}\``,
       ]),
     ),
     "",
