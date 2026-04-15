@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.worktree_lifecycle",
+  "kind": "positive",
+  "setup": {
+    "workspace": "multi-worktree",
+    "git": "clean"
+  },
+  "surfaces": [
+    "surface.runtime"
+  ],
+  "profiles": [
+    "core-runtime"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "test.tui.witness",
+  "status": "draft",
+  "bootstrap": true,
+  "case_id": "witness.tui.timeline_dialog",
+  "profile_id": "tui-certified",
+  "world_id": "world.tool_output_heavy_session",
+  "goal": "Certified witness for the timeline dialog over the session surface.",
+  "required_surfaces": [
+    "session",
+    "timeline_dialog"
+  ],
+  "required_tui_routes": [
+    "tui.file.thread",
+    "tui.file.dialog_timeline",
+    "tui.file.transcript"
+  ],
+  "required_tests": [
+    "tui.test.thread_test_ts",
+    "tui.test.transcript_test_ts"
+  ],
+  "surfaces": [
+    "session",
+    "timeline_dialog"
+  ],
+  "layers": [
+    "interaction",
+    "layout",
+    "frame"
+  ]
+}

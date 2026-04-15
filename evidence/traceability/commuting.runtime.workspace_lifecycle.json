@@ -1,7 +1,7 @@
 {
   "case_id": "witness.runtime.workspace_lifecycle",
   "profile_id": "core-runtime",
-  "world_id": "world.minimal_repo",
+  "world_id": "world.worktree_lifecycle",
   "observation_space": {
     "projection": "workspace_lifecycle_projection",
     "equivalence": "exact_json",

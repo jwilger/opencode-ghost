@@ -69,6 +69,42 @@
         "frame"
       ],
       "source_hint": "packages/opencode/src/cli/cmd/tui/component/plugin-route-missing.tsx"
+    },
+    {
+      "id": "tui.screen.home",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/cli/cmd/tui/routes/home.tsx"
+    },
+    {
+      "id": "tui.screen.help_dialog",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/cli/cmd/tui/ui/dialog-help.tsx"
+    },
+    {
+      "id": "tui.screen.sidebar",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/cli/cmd/tui/routes/session/sidebar.tsx"
+    },
+    {
+      "id": "tui.screen.timeline_dialog",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/cli/cmd/tui/routes/session/dialog-timeline.tsx"
     }
   ]
 }

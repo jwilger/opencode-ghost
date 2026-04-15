@@ -21,12 +21,19 @@
   "required_tui_surfaces": [
     "tui.file.thread",
     "tui.file.dialog_command",
+    "tui.file.dialog_help",
+    "tui.file.home",
     "tui.file.dialog_session_list",
     "tui.file.plugin_route_missing",
-    "tui.file.dialog_theme_list"
+    "tui.file.sidebar",
+    "tui.file.dialog_theme_list",
+    "tui.file.dialog_timeline",
+    "tui.file.transcript"
   ],
   "required_tui_tests": [
     "tui.test.thread_test_ts",
+    "tui.test.keybind_plugin_test_ts",
+    "tui.test.plugin_lifecycle_test_ts",
     "tui.test.transcript_test_ts",
     "tui.test.plugin_loader_test_ts",
     "tui.test.theme_store_test_ts"
@@ -77,6 +84,26 @@
       ]
     },
     {
+      "case_id": "witness.tui.help_dialog",
+      "profile_id": "tui-certified",
+      "required_surfaces": [
+        "tui.file.dialog_help"
+      ],
+      "required_tests": [
+        "tui.test.keybind_plugin_test_ts"
+      ]
+    },
+    {
+      "case_id": "witness.tui.home",
+      "profile_id": "tui-certified",
+      "required_surfaces": [
+        "tui.file.home"
+      ],
+      "required_tests": [
+        "tui.test.plugin_lifecycle_test_ts"
+      ]
+    },
+    {
       "case_id": "witness.tui.permission_view",
       "profile_id": "tui-certified",
       "required_surfaces": [
@@ -110,6 +137,18 @@
       ]
     },
     {
+      "case_id": "witness.tui.sidebar",
+      "profile_id": "tui-certified",
+      "required_surfaces": [
+        "tui.file.thread",
+        "tui.file.sidebar"
+      ],
+      "required_tests": [
+        "tui.test.thread_test_ts",
+        "tui.test.plugin_lifecycle_test_ts"
+      ]
+    },
+    {
       "case_id": "witness.tui.theme_dialog",
       "profile_id": "tui-certified",
       "required_surfaces": [
@@ -119,6 +158,19 @@
       "required_tests": [
         "tui.test.theme_store_test_ts",
         "tui.test.plugin_loader_test_ts"
+      ]
+    },
+    {
+      "case_id": "witness.tui.timeline_dialog",
+      "profile_id": "tui-certified",
+      "required_surfaces": [
+        "tui.file.thread",
+        "tui.file.dialog_timeline",
+        "tui.file.transcript"
+      ],
+      "required_tests": [
+        "tui.test.thread_test_ts",
+        "tui.test.transcript_test_ts"
       ]
     }
   ]

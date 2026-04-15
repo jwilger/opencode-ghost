@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.permission_session",
+  "kind": "positive",
+  "setup": {
+    "workspace": "minimal",
+    "permission": "pending"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.tui",
+    "surface.kernel"
+  ],
+  "profiles": [
+    "runtime-formal",
+    "tui-certified"
+  ]
+}

@@ -8,21 +8,21 @@
 | --- | --- |
 | surfaces | 5 |
 | profiles | 6 |
-| claims | 37 |
-| commuting_claims | 8 |
-| source_certified_claims | 12 |
-| requires_edges | 27 |
-| checked_by_edges | 29 |
-| certifies_edges | 18 |
+| claims | 45 |
+| commuting_claims | 12 |
+| source_certified_claims | 16 |
+| requires_edges | 35 |
+| checked_by_edges | 37 |
+| certifies_edges | 22 |
 | profile_certifications | 6 |
 
 ## Surface Coverage
 
 | Surface | Profiles | Claims |
 | --- | --- | --- |
-| `surface.runtime` | 3 | 1 |
-| `surface.tui` | 2 | 5 |
-| `surface.integrations` | 1 | 4 |
+| `surface.runtime` | 5 | 1 |
+| `surface.tui` | 3 | 9 |
+| `surface.integrations` | 2 | 4 |
 | `surface.security` | 1 | 4 |
 | `surface.kernel` | 1 | 7 |
 
@@ -67,3 +67,11 @@
 | `claim.rust_reference.runtime_tui` | `operational` | 1 | `provisional` |
 | `claim.rust_blind.runtime_tui` | `operational` | 1 | `provisional` |
 | `claim.go_sanity.runtime_tui` | `operational` | 1 | `provisional` |
+| `claim.tui.commuting.home` | `operational` | 1 | `provisional` |
+| `claim.tui.source_certified.home` | `operational` | 1 | `provisional` |
+| `claim.tui.commuting.help_dialog` | `operational` | 1 | `provisional` |
+| `claim.tui.source_certified.help_dialog` | `operational` | 1 | `provisional` |
+| `claim.tui.commuting.sidebar` | `operational` | 1 | `provisional` |
+| `claim.tui.source_certified.sidebar` | `operational` | 1 | `provisional` |
+| `claim.tui.commuting.timeline_dialog` | `operational` | 1 | `provisional` |
+| `claim.tui.source_certified.timeline_dialog` | `operational` | 1 | `provisional` |

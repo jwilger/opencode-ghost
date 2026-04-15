@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.shared_imported_session",
+  "kind": "positive",
+  "setup": {
+    "session": "imported_or_shared",
+    "auth": "configured"
+  },
+  "surfaces": [
+    "surface.integrations",
+    "surface.runtime"
+  ],
+  "profiles": [
+    "integrations-canonical"
+  ]
+}

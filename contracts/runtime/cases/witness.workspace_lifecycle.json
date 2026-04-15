@@ -4,7 +4,7 @@
   "status": "provisional",
   "case_id": "witness.runtime.workspace_lifecycle",
   "profile_id": "core-runtime",
-  "world_id": "world.minimal_repo",
+  "world_id": "world.worktree_lifecycle",
   "transport": "inventory",
   "input": {
     "kind": "route_inventory",

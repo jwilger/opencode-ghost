@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.tool_output_heavy_session",
+  "kind": "positive",
+  "setup": {
+    "session": "busy",
+    "tool_output": "heavy"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.tui"
+  ],
+  "profiles": [
+    "tui-certified",
+    "core-runtime"
+  ]
+}
