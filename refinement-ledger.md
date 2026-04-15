@@ -25,3 +25,8 @@
 | `surface.integrations` |  | `world.partial_stream_disconnect` |
 | `surface.runtime` |  | `world.corrupted_persisted_state` |
 | `surface.tui` |  | `world.invalid_tui_interaction` |
+| `surface.runtime` |  | `world.dirty_git_repo` |
+| `surface.runtime` |  | `world.malformed_replay_ordering` |
+| `surface.kernel` |  | `world.malformed_replay_ordering` |
+| `surface.runtime` |  | `world.mid_run_cancellation` |
+| `surface.kernel` |  | `world.mid_run_cancellation` |

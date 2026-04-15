@@ -20,11 +20,11 @@
 
 | Surface | Profiles | Claims |
 | --- | --- | --- |
-| `surface.runtime` | 9 | 1 |
+| `surface.runtime` | 12 | 1 |
 | `surface.tui` | 4 | 9 |
 | `surface.integrations` | 3 | 4 |
 | `surface.security` | 3 | 4 |
-| `surface.kernel` | 2 | 7 |
+| `surface.kernel` | 4 | 7 |
 
 ## Claim Coverage
 

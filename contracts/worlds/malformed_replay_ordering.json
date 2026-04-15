@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.malformed_replay_ordering",
+  "kind": "adversarial",
+  "setup": {
+    "replay": "malformed_ordering"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.kernel"
+  ],
+  "profiles": [
+    "runtime-formal"
+  ]
+}

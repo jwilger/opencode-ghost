@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.mid_run_cancellation",
+  "kind": "adversarial",
+  "setup": {
+    "session": "busy",
+    "cancellation": "mid_run"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.kernel"
+  ],
+  "profiles": [
+    "runtime-formal",
+    "core-runtime"
+  ]
+}
