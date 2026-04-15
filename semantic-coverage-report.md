@@ -2,10 +2,40 @@
 
 > Generated from `graph/contract-graph.jsonl`. Do not edit directly.
 
-## Seed coverage dimensions
+## Coverage Summary
 
-- `surface.runtime`
-- `surface.tui`
-- `surface.integrations`
-- `surface.security`
-- `surface.kernel`
+| Dimension | Count |
+| --- | --- |
+| surfaces | 5 |
+| profiles | 6 |
+| claims | 10 |
+| commuting_claims | 2 |
+| source_certified_claims | 2 |
+| requires_edges | 6 |
+| checked_by_edges | 4 |
+| certifies_edges | 3 |
+
+## Surface Coverage
+
+| Surface | Profiles | Claims |
+| --- | --- | --- |
+| `surface.runtime` | 3 | 0 |
+| `surface.tui` | 2 | 1 |
+| `surface.integrations` | 1 | 0 |
+| `surface.security` | 1 | 0 |
+| `surface.kernel` | 1 | 4 |
+
+## Claim Coverage
+
+| Claim | Kind | Checked by | State |
+| --- | --- | --- | --- |
+| `claim.source_first_certification` | `operational` | 0 | `provisional` |
+| `claim.stable_ids` | `operational` | 0 | `provisional` |
+| `claim.generated_governance` | `operational` | 0 | `provisional` |
+| `claim.runtime.pending_waiting` | `operational` | 0 | `provisional` |
+| `claim.runtime.approved_idle` | `operational` | 0 | `provisional` |
+| `claim.runtime.witness_final` | `operational` | 0 | `provisional` |
+| `claim.runtime.commuting.permission_cycle` | `operational` | 1 | `provisional` |
+| `claim.runtime.source_certified.permission_cycle` | `operational` | 1 | `provisional` |
+| `claim.tui.commuting.permission_view` | `operational` | 1 | `provisional` |
+| `claim.tui.source_certified.permission_view` | `operational` | 1 | `provisional` |

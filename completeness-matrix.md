@@ -8,6 +8,14 @@
 | `implementation.opencode_source` | `implementation` | `normative` | `provisional` |  |
 | `artifact.graph.contract_graph` | `artifact` | `normative` | `draft` | `graph/contract-graph.jsonl` |
 | `artifact.graph.contract_graph_schema` | `artifact` | `normative` | `draft` | `graph/schema/contract-graph.schema.json` |
+| `artifact.script.extract` | `artifact` | `normative` | `provisional` | `script/extract.ts` |
+| `artifact.script.render` | `artifact` | `normative` | `provisional` | `script/render.ts` |
+| `artifact.script.check` | `artifact` | `normative` | `provisional` | `script/check.ts` |
+| `artifact.script.commute_runtime` | `artifact` | `normative` | `provisional` | `script/commute.ts` |
+| `artifact.script.certify_runtime` | `artifact` | `normative` | `provisional` | `script/certify.ts` |
+| `artifact.script.commute_tui` | `artifact` | `normative` | `provisional` | `script/tui-commute.ts` |
+| `artifact.script.certify_tui` | `artifact` | `normative` | `provisional` | `script/tui-certify.ts` |
+| `artifact.script.verify_all` | `artifact` | `normative` | `provisional` | `verify-all` |
 | `artifact.policy.classification` | `policy` | `normative` | `provisional` |  |
 | `artifact.policy.promotion` | `policy` | `normative` | `provisional` |  |
 | `profile.core_runtime` | `profile` | `normative` | `draft` |  |

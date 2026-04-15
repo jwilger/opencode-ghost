@@ -125,30 +125,89 @@ const renderRust = (rows: Row[]) =>
   ])
 
 const renderCoverage = (rows: Row[]) =>
-  md("semantic-coverage-report.md", [
-    `> ${quote}`,
-    "",
-    "## Seed coverage dimensions",
-    "",
-    ...rows
-      .filter((x) => x.kind === "node" && x.type === "surface")
-      .map((x) => `- \`${x.id}\``),
-  ])
+  md("semantic-coverage-report.md", (() => {
+    const nodes = rows.filter((x) => x.kind === "node")
+    const edges = rows.filter((x) => x.kind === "edge")
+    const profiles = nodes.filter((x) => x.type === "profile")
+    const surfaces = nodes.filter((x) => x.type === "surface")
+    const claims = nodes.filter((x) => x.type === "claim")
+    const certified = claims.filter((x) => x.id.includes("source_certified"))
+    const commuting = claims.filter((x) => x.id.includes(".commuting."))
+    const coverage = [
+      ["surfaces", `${surfaces.length}`],
+      ["profiles", `${profiles.length}`],
+      ["claims", `${claims.length}`],
+      ["commuting_claims", `${commuting.length}`],
+      ["source_certified_claims", `${certified.length}`],
+      ["requires_edges", `${edges.filter((x) => x.type === "requires").length}`],
+      ["checked_by_edges", `${edges.filter((x) => x.type === "checked_by").length}`],
+      ["certifies_edges", `${edges.filter((x) => x.type === "certifies").length}`],
+    ]
+    return [
+      `> ${quote}`,
+      "",
+      "## Coverage Summary",
+      "",
+      table(["Dimension", "Count"], coverage),
+      "",
+      "## Surface Coverage",
+      "",
+      table(
+        ["Surface", "Profiles", "Claims"],
+        surfaces.map((surface) => [
+          `\`${surface.id}\``,
+          `${edges.filter((x) => x.type === "covers" && x.to === surface.id).length}`,
+          `${edges.filter((x) => x.type === "refines" && x.to === surface.id).length}`,
+        ]),
+      ),
+      "",
+      "## Claim Coverage",
+      "",
+      table(
+        ["Claim", "Kind", "Checked by", "State"],
+        claims.map((claim) => [
+          `\`${claim.id}\``,
+          `\`${String(claim.attrs?.kind || "")}\``,
+          `${edges.filter((x) => x.type === "checked_by" && x.from === claim.id).length}`,
+          `\`${claim.state}\``,
+        ]),
+      ),
+    ]
+  })())
 
 const renderTcb = (rows: Row[]) =>
-  md("tcb-inventory.md", [
-    `> ${quote}`,
-    "",
-    "## Seed trusted elements",
-    "",
-    ...rows
-      .filter(
-        (x) =>
-          x.kind === "node" &&
-          ((x.type === "artifact" && x.id.startsWith("artifact.graph.")) || x.id.startsWith("report.")),
-      )
-      .map((x) => `- \`${x.id}\``),
-  ])
+  md("tcb-inventory.md", (() => {
+    const nodes = rows.filter((x) => x.kind === "node")
+    const tcb = nodes.filter((x) => x.type === "artifact" && x.attrs?.tcb === true)
+    return [
+      `> ${quote}`,
+      "",
+      "## Trusted Elements",
+      "",
+      table(
+        ["ID", "Path", "Assumption strata", "Note"],
+        tcb.map((x) => [
+          `\`${x.id}\``,
+          x.path ? `\`${x.path}\`` : "",
+          `\`${Array.isArray(x.attrs?.assumption_strata) ? x.attrs?.assumption_strata.join(",") : ""}\``,
+          x.note || "",
+        ]),
+      ),
+      "",
+      "## Summary",
+      "",
+      table(
+        ["Class", "Count"],
+        [
+          ["trusted_artifacts", `${tcb.length}`],
+          ["abstraction_bound", `${tcb.filter((x) => Array.isArray(x.attrs?.assumption_strata) && x.attrs?.assumption_strata.includes("abstraction")).length}`],
+          ["harness_bound", `${tcb.filter((x) => Array.isArray(x.attrs?.assumption_strata) && x.attrs?.assumption_strata.includes("harness")).length}`],
+          ["environment_bound", `${tcb.filter((x) => Array.isArray(x.attrs?.assumption_strata) && x.attrs?.assumption_strata.includes("environment")).length}`],
+          ["normalization_bound", `${tcb.filter((x) => Array.isArray(x.attrs?.assumption_strata) && x.attrs?.assumption_strata.includes("normalization")).length}`],
+        ],
+      ),
+    ]
+  })())
 
 const targets = async () => {
   const rows = await readRows()
