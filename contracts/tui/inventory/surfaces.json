@@ -1,0 +1,499 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "inventory.tui.surfaces",
+  "source_commit": "9640d889baa58fa01ed612a6372ba77462f79d9f",
+  "source_branch": "dev",
+  "count": 98,
+  "items": [
+    {
+      "id": "tui.file.app",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/app.tsx"
+    },
+    {
+      "id": "tui.file.attach",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/attach.ts"
+    },
+    {
+      "id": "tui.file.border",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/border.tsx"
+    },
+    {
+      "id": "tui.file.dialog_agent",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-agent.tsx"
+    },
+    {
+      "id": "tui.file.dialog_command",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-command.tsx"
+    },
+    {
+      "id": "tui.file.dialog_console_org",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-console-org.tsx"
+    },
+    {
+      "id": "tui.file.dialog_go_upsell",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-go-upsell.tsx"
+    },
+    {
+      "id": "tui.file.dialog_mcp",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-mcp.tsx"
+    },
+    {
+      "id": "tui.file.dialog_model",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-model.tsx"
+    },
+    {
+      "id": "tui.file.dialog_provider",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-provider.tsx"
+    },
+    {
+      "id": "tui.file.dialog_session_list",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-session-list.tsx"
+    },
+    {
+      "id": "tui.file.dialog_session_rename",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-session-rename.tsx"
+    },
+    {
+      "id": "tui.file.dialog_skill",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-skill.tsx"
+    },
+    {
+      "id": "tui.file.dialog_stash",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-stash.tsx"
+    },
+    {
+      "id": "tui.file.dialog_status",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-status.tsx"
+    },
+    {
+      "id": "tui.file.dialog_tag",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-tag.tsx"
+    },
+    {
+      "id": "tui.file.dialog_theme_list",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-theme-list.tsx"
+    },
+    {
+      "id": "tui.file.dialog_variant",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-variant.tsx"
+    },
+    {
+      "id": "tui.file.dialog_workspace_create",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/component/dialog-workspace-create.tsx"
+    },
+    {
+      "id": "tui.file.error_component",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/error-component.tsx"
+    },
+    {
+      "id": "tui.file.logo",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/logo.tsx"
+    },
+    {
+      "id": "tui.file.plugin_route_missing",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/plugin-route-missing.tsx"
+    },
+    {
+      "id": "tui.file.autocomplete",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/autocomplete.tsx"
+    },
+    {
+      "id": "tui.file.frecency",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/frecency.tsx"
+    },
+    {
+      "id": "tui.file.history",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/history.tsx"
+    },
+    {
+      "id": "tui.file.index",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/index.tsx"
+    },
+    {
+      "id": "tui.file.part",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/part.ts"
+    },
+    {
+      "id": "tui.file.stash",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/prompt/stash.tsx"
+    },
+    {
+      "id": "tui.file.spinner",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/spinner.tsx"
+    },
+    {
+      "id": "tui.file.startup_loading",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/startup-loading.tsx"
+    },
+    {
+      "id": "tui.file.textarea_keybindings",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/textarea-keybindings.ts"
+    },
+    {
+      "id": "tui.file.todo_item",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/component/todo-item.tsx"
+    },
+    {
+      "id": "tui.file.args",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/args.tsx"
+    },
+    {
+      "id": "tui.file.directory",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/directory.ts"
+    },
+    {
+      "id": "tui.file.event",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/event.ts"
+    },
+    {
+      "id": "tui.file.exit",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/exit.tsx"
+    },
+    {
+      "id": "tui.file.helper",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/helper.tsx"
+    },
+    {
+      "id": "tui.file.keybind",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/keybind.tsx"
+    },
+    {
+      "id": "tui.file.kv",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/kv.tsx"
+    },
+    {
+      "id": "tui.file.local",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/local.tsx"
+    },
+    {
+      "id": "tui.file.plugin_keybinds",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/plugin-keybinds.ts"
+    },
+    {
+      "id": "tui.file.project",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/project.tsx"
+    },
+    {
+      "id": "tui.file.prompt",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/prompt.tsx"
+    },
+    {
+      "id": "tui.file.route",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/route.tsx"
+    },
+    {
+      "id": "tui.file.sdk",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/sdk.tsx"
+    },
+    {
+      "id": "tui.file.sync",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/sync.tsx"
+    },
+    {
+      "id": "tui.file.theme",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/theme.tsx"
+    },
+    {
+      "id": "tui.file.tui_config",
+      "kind": "context",
+      "source": "packages/opencode/src/cli/cmd/tui/context/tui-config.tsx"
+    },
+    {
+      "id": "tui.file.event",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/event.ts"
+    },
+    {
+      "id": "tui.file.footer",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/home/footer.tsx"
+    },
+    {
+      "id": "tui.file.tips_view",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/home/tips-view.tsx"
+    },
+    {
+      "id": "tui.file.tips",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/home/tips.tsx"
+    },
+    {
+      "id": "tui.file.context",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/context.tsx"
+    },
+    {
+      "id": "tui.file.files",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/files.tsx"
+    },
+    {
+      "id": "tui.file.footer",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/footer.tsx"
+    },
+    {
+      "id": "tui.file.lsp",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/lsp.tsx"
+    },
+    {
+      "id": "tui.file.mcp",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/mcp.tsx"
+    },
+    {
+      "id": "tui.file.todo",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/sidebar/todo.tsx"
+    },
+    {
+      "id": "tui.file.plugins",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/feature-plugins/system/plugins.tsx"
+    },
+    {
+      "id": "tui.file.api",
+      "kind": "plugin",
+      "source": "packages/opencode/src/cli/cmd/tui/plugin/api.tsx"
+    },
+    {
+      "id": "tui.file.index",
+      "kind": "plugin",
+      "source": "packages/opencode/src/cli/cmd/tui/plugin/index.ts"
+    },
+    {
+      "id": "tui.file.internal",
+      "kind": "plugin",
+      "source": "packages/opencode/src/cli/cmd/tui/plugin/internal.ts"
+    },
+    {
+      "id": "tui.file.runtime",
+      "kind": "plugin",
+      "source": "packages/opencode/src/cli/cmd/tui/plugin/runtime.ts"
+    },
+    {
+      "id": "tui.file.slots",
+      "kind": "plugin",
+      "source": "packages/opencode/src/cli/cmd/tui/plugin/slots.tsx"
+    },
+    {
+      "id": "tui.file.home",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/home.tsx"
+    },
+    {
+      "id": "tui.file.dialog_fork_from_timeline",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/dialog-fork-from-timeline.tsx"
+    },
+    {
+      "id": "tui.file.dialog_message",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/dialog-message.tsx"
+    },
+    {
+      "id": "tui.file.dialog_subagent",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/dialog-subagent.tsx"
+    },
+    {
+      "id": "tui.file.dialog_timeline",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/dialog-timeline.tsx"
+    },
+    {
+      "id": "tui.file.footer",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/footer.tsx"
+    },
+    {
+      "id": "tui.file.index",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/index.tsx"
+    },
+    {
+      "id": "tui.file.permission",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/permission.tsx"
+    },
+    {
+      "id": "tui.file.question",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/question.tsx"
+    },
+    {
+      "id": "tui.file.sidebar",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/sidebar.tsx"
+    },
+    {
+      "id": "tui.file.subagent_footer",
+      "kind": "route",
+      "source": "packages/opencode/src/cli/cmd/tui/routes/session/subagent-footer.tsx"
+    },
+    {
+      "id": "tui.file.thread",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/thread.ts"
+    },
+    {
+      "id": "tui.file.dialog_alert",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-alert.tsx"
+    },
+    {
+      "id": "tui.file.dialog_confirm",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-confirm.tsx"
+    },
+    {
+      "id": "tui.file.dialog_export_options",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-export-options.tsx"
+    },
+    {
+      "id": "tui.file.dialog_help",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-help.tsx"
+    },
+    {
+      "id": "tui.file.dialog_prompt",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-prompt.tsx"
+    },
+    {
+      "id": "tui.file.dialog_select",
+      "kind": "dialog",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog-select.tsx"
+    },
+    {
+      "id": "tui.file.dialog",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/dialog.tsx"
+    },
+    {
+      "id": "tui.file.link",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/link.tsx"
+    },
+    {
+      "id": "tui.file.spinner",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/spinner.ts"
+    },
+    {
+      "id": "tui.file.toast",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/ui/toast.tsx"
+    },
+    {
+      "id": "tui.file.clipboard",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/clipboard.ts"
+    },
+    {
+      "id": "tui.file.editor",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/editor.ts"
+    },
+    {
+      "id": "tui.file.model",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/model.ts"
+    },
+    {
+      "id": "tui.file.provider_origin",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/provider-origin.ts"
+    },
+    {
+      "id": "tui.file.scroll",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/scroll.ts"
+    },
+    {
+      "id": "tui.file.selection",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/selection.ts"
+    },
+    {
+      "id": "tui.file.signal",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/signal.ts"
+    },
+    {
+      "id": "tui.file.sound",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/sound.ts"
+    },
+    {
+      "id": "tui.file.terminal",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/terminal.ts"
+    },
+    {
+      "id": "tui.file.transcript",
+      "kind": "util",
+      "source": "packages/opencode/src/cli/cmd/tui/util/transcript.ts"
+    },
+    {
+      "id": "tui.file.win32",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/win32.ts"
+    },
+    {
+      "id": "tui.file.worker",
+      "kind": "core",
+      "source": "packages/opencode/src/cli/cmd/tui/worker.ts"
+    }
+  ]
+}

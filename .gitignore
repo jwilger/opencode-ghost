@@ -1,0 +1,7 @@
+.direnv/
+.lake/
+.cache/
+node_modules/
+result
+*.log
+lake-manifest.json

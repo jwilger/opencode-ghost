@@ -1,0 +1,195 @@
+{"id":"trace.command._0_project_","kind":"command","target":"$0 [project]","source":"packages/opencode/src/cli/cmd/tui/thread.ts"}
+{"id":"trace.command._0_query_","kind":"command","target":"$0 [query]","source":"packages/opencode/src/cli/cmd/db.ts"}
+{"id":"trace.command.acp","kind":"command","target":"acp","source":"packages/opencode/src/cli/cmd/acp.ts"}
+{"id":"trace.command.add","kind":"command","target":"add","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.agent","kind":"command","target":"agent","source":"packages/opencode/src/cli/cmd/agent.ts"}
+{"id":"trace.command.agent_name_","kind":"command","target":"agent <name>","source":"packages/opencode/src/cli/cmd/debug/agent.ts"}
+{"id":"trace.command.attach_url_","kind":"command","target":"attach <url>","source":"packages/opencode/src/cli/cmd/tui/attach.ts"}
+{"id":"trace.command.auth_name_","kind":"command","target":"auth [name]","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.config","kind":"command","target":"config","source":"packages/opencode/src/cli/cmd/debug/config.ts"}
+{"id":"trace.command.console","kind":"command","target":"console","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.create","kind":"command","target":"create","source":"packages/opencode/src/cli/cmd/agent.ts"}
+{"id":"trace.command.db","kind":"command","target":"db","source":"packages/opencode/src/cli/cmd/db.ts"}
+{"id":"trace.command.debug","kind":"command","target":"debug","source":"packages/opencode/src/cli/cmd/debug/index.ts"}
+{"id":"trace.command.debug_name_","kind":"command","target":"debug <name>","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.delete_sessionid_","kind":"command","target":"delete <sessionID>","source":"packages/opencode/src/cli/cmd/session.ts"}
+{"id":"trace.command.diagnostics_file_","kind":"command","target":"diagnostics <file>","source":"packages/opencode/src/cli/cmd/debug/lsp.ts"}
+{"id":"trace.command.diff_hash_","kind":"command","target":"diff <hash>","source":"packages/opencode/src/cli/cmd/debug/snapshot.ts"}
+{"id":"trace.command.document_symbols_uri_","kind":"command","target":"document-symbols <uri>","source":"packages/opencode/src/cli/cmd/debug/lsp.ts"}
+{"id":"trace.command.export_sessionid_","kind":"command","target":"export [sessionID]","source":"packages/opencode/src/cli/cmd/export.ts"}
+{"id":"trace.command.file","kind":"command","target":"file","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.files","kind":"command","target":"files","source":"packages/opencode/src/cli/cmd/debug/ripgrep.ts"}
+{"id":"trace.command.generate","kind":"command","target":"generate","source":"packages/opencode/src/cli/cmd/generate.ts"}
+{"id":"trace.command.github","kind":"command","target":"github","source":"packages/opencode/src/cli/cmd/github.ts"}
+{"id":"trace.command.import_file_","kind":"command","target":"import <file>","source":"packages/opencode/src/cli/cmd/import.ts"}
+{"id":"trace.command.install","kind":"command","target":"install","source":"packages/opencode/src/cli/cmd/github.ts"}
+{"id":"trace.command.list","kind":"command","target":"list","source":"packages/opencode/src/cli/cmd/agent.ts"}
+{"id":"trace.command.list","kind":"command","target":"list","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.list","kind":"command","target":"list","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.list","kind":"command","target":"list","source":"packages/opencode/src/cli/cmd/providers.ts"}
+{"id":"trace.command.list","kind":"command","target":"list","source":"packages/opencode/src/cli/cmd/session.ts"}
+{"id":"trace.command.list_path_","kind":"command","target":"list <path>","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.login_url_","kind":"command","target":"login <url>","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.login_url_","kind":"command","target":"login [url]","source":"packages/opencode/src/cli/cmd/providers.ts"}
+{"id":"trace.command.logout","kind":"command","target":"logout","source":"packages/opencode/src/cli/cmd/providers.ts"}
+{"id":"trace.command.logout_email_","kind":"command","target":"logout [email]","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.logout_name_","kind":"command","target":"logout [name]","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.lsp","kind":"command","target":"lsp","source":"packages/opencode/src/cli/cmd/debug/lsp.ts"}
+{"id":"trace.command.mcp","kind":"command","target":"mcp","source":"packages/opencode/src/cli/cmd/mcp.ts"}
+{"id":"trace.command.migrate","kind":"command","target":"migrate","source":"packages/opencode/src/cli/cmd/db.ts"}
+{"id":"trace.command.models_provider_","kind":"command","target":"models [provider]","source":"packages/opencode/src/cli/cmd/models.ts"}
+{"id":"trace.command.open","kind":"command","target":"open","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.orgs","kind":"command","target":"orgs","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.patch_hash_","kind":"command","target":"patch <hash>","source":"packages/opencode/src/cli/cmd/debug/snapshot.ts"}
+{"id":"trace.command.path","kind":"command","target":"path","source":"packages/opencode/src/cli/cmd/db.ts"}
+{"id":"trace.command.paths","kind":"command","target":"paths","source":"packages/opencode/src/cli/cmd/debug/index.ts"}
+{"id":"trace.command.plugin_module_","kind":"command","target":"plugin <module>","source":"packages/opencode/src/cli/cmd/plug.ts"}
+{"id":"trace.command.pr_number_","kind":"command","target":"pr <number>","source":"packages/opencode/src/cli/cmd/pr.ts"}
+{"id":"trace.command.providers","kind":"command","target":"providers","source":"packages/opencode/src/cli/cmd/providers.ts"}
+{"id":"trace.command.read_path_","kind":"command","target":"read <path>","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.rg","kind":"command","target":"rg","source":"packages/opencode/src/cli/cmd/debug/ripgrep.ts"}
+{"id":"trace.command.run","kind":"command","target":"run","source":"packages/opencode/src/cli/cmd/github.ts"}
+{"id":"trace.command.run_message_","kind":"command","target":"run [message..]","source":"packages/opencode/src/cli/cmd/run.ts"}
+{"id":"trace.command.scrap","kind":"command","target":"scrap","source":"packages/opencode/src/cli/cmd/debug/scrap.ts"}
+{"id":"trace.command.search_pattern_","kind":"command","target":"search <pattern>","source":"packages/opencode/src/cli/cmd/debug/ripgrep.ts"}
+{"id":"trace.command.search_query_","kind":"command","target":"search <query>","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.serve","kind":"command","target":"serve","source":"packages/opencode/src/cli/cmd/serve.ts"}
+{"id":"trace.command.session","kind":"command","target":"session","source":"packages/opencode/src/cli/cmd/session.ts"}
+{"id":"trace.command.skill","kind":"command","target":"skill","source":"packages/opencode/src/cli/cmd/debug/skill.ts"}
+{"id":"trace.command.snapshot","kind":"command","target":"snapshot","source":"packages/opencode/src/cli/cmd/debug/snapshot.ts"}
+{"id":"trace.command.stats","kind":"command","target":"stats","source":"packages/opencode/src/cli/cmd/stats.ts"}
+{"id":"trace.command.status","kind":"command","target":"status","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.switch","kind":"command","target":"switch","source":"packages/opencode/src/cli/cmd/account.ts"}
+{"id":"trace.command.symbols_query_","kind":"command","target":"symbols <query>","source":"packages/opencode/src/cli/cmd/debug/lsp.ts"}
+{"id":"trace.command.track","kind":"command","target":"track","source":"packages/opencode/src/cli/cmd/debug/snapshot.ts"}
+{"id":"trace.command.tree","kind":"command","target":"tree","source":"packages/opencode/src/cli/cmd/debug/ripgrep.ts"}
+{"id":"trace.command.tree_dir_","kind":"command","target":"tree [dir]","source":"packages/opencode/src/cli/cmd/debug/file.ts"}
+{"id":"trace.command.uninstall","kind":"command","target":"uninstall","source":"packages/opencode/src/cli/cmd/uninstall.ts"}
+{"id":"trace.command.upgrade_target_","kind":"command","target":"upgrade [target]","source":"packages/opencode/src/cli/cmd/upgrade.ts"}
+{"id":"trace.command.wait","kind":"command","target":"wait","source":"packages/opencode/src/cli/cmd/debug/index.ts"}
+{"id":"trace.command.web","kind":"command","target":"web","source":"packages/opencode/src/cli/cmd/web.ts"}
+{"id":"trace.route.app_agents","kind":"route","target":"app.agents","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.app_skills","kind":"route","target":"app.skills","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.command_list","kind":"route","target":"command.list","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.config_get","kind":"route","target":"config.get","source":"packages/opencode/src/server/instance/config.ts"}
+{"id":"trace.route.config_providers","kind":"route","target":"config.providers","source":"packages/opencode/src/server/instance/config.ts"}
+{"id":"trace.route.config_update","kind":"route","target":"config.update","source":"packages/opencode/src/server/instance/config.ts"}
+{"id":"trace.route.event_subscribe","kind":"route","target":"event.subscribe","source":"packages/opencode/src/server/instance/event.ts"}
+{"id":"trace.route.experimental_console_get","kind":"route","target":"experimental.console.get","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.experimental_console_listorgs","kind":"route","target":"experimental.console.listOrgs","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.experimental_console_switchorg","kind":"route","target":"experimental.console.switchOrg","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.experimental_resource_list","kind":"route","target":"experimental.resource.list","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.experimental_session_list","kind":"route","target":"experimental.session.list","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.experimental_workspace_adaptor_list","kind":"route","target":"experimental.workspace.adaptor.list","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.experimental_workspace_create","kind":"route","target":"experimental.workspace.create","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.experimental_workspace_list","kind":"route","target":"experimental.workspace.list","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.experimental_workspace_remove","kind":"route","target":"experimental.workspace.remove","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.experimental_workspace_sessionrestore","kind":"route","target":"experimental.workspace.sessionRestore","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.experimental_workspace_status","kind":"route","target":"experimental.workspace.status","source":"packages/opencode/src/server/instance/workspace.ts"}
+{"id":"trace.route.file_list","kind":"route","target":"file.list","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.file_read","kind":"route","target":"file.read","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.file_status","kind":"route","target":"file.status","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.find_files","kind":"route","target":"find.files","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.find_symbols","kind":"route","target":"find.symbols","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.find_text","kind":"route","target":"find.text","source":"packages/opencode/src/server/instance/file.ts"}
+{"id":"trace.route.formatter_status","kind":"route","target":"formatter.status","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.global_config_get","kind":"route","target":"global.config.get","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.global_config_update","kind":"route","target":"global.config.update","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.global_dispose","kind":"route","target":"global.dispose","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.global_event","kind":"route","target":"global.event","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.global_health","kind":"route","target":"global.health","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.global_upgrade","kind":"route","target":"global.upgrade","source":"packages/opencode/src/server/instance/global.ts"}
+{"id":"trace.route.instance_dispose","kind":"route","target":"instance.dispose","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.lsp_status","kind":"route","target":"lsp.status","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.mcp_add","kind":"route","target":"mcp.add","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_auth_authenticate","kind":"route","target":"mcp.auth.authenticate","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_auth_callback","kind":"route","target":"mcp.auth.callback","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_auth_remove","kind":"route","target":"mcp.auth.remove","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_auth_start","kind":"route","target":"mcp.auth.start","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_connect","kind":"route","target":"mcp.connect","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_disconnect","kind":"route","target":"mcp.disconnect","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.mcp_status","kind":"route","target":"mcp.status","source":"packages/opencode/src/server/instance/mcp.ts"}
+{"id":"trace.route.part_delete","kind":"route","target":"part.delete","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.part_update","kind":"route","target":"part.update","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.path_get","kind":"route","target":"path.get","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.permission_list","kind":"route","target":"permission.list","source":"packages/opencode/src/server/instance/permission.ts"}
+{"id":"trace.route.permission_reply","kind":"route","target":"permission.reply","source":"packages/opencode/src/server/instance/permission.ts"}
+{"id":"trace.route.permission_respond","kind":"route","target":"permission.respond","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.project_current","kind":"route","target":"project.current","source":"packages/opencode/src/server/instance/project.ts"}
+{"id":"trace.route.project_initgit","kind":"route","target":"project.initGit","source":"packages/opencode/src/server/instance/project.ts"}
+{"id":"trace.route.project_list","kind":"route","target":"project.list","source":"packages/opencode/src/server/instance/project.ts"}
+{"id":"trace.route.project_update","kind":"route","target":"project.update","source":"packages/opencode/src/server/instance/project.ts"}
+{"id":"trace.route.provider_auth","kind":"route","target":"provider.auth","source":"packages/opencode/src/server/instance/provider.ts"}
+{"id":"trace.route.provider_list","kind":"route","target":"provider.list","source":"packages/opencode/src/server/instance/provider.ts"}
+{"id":"trace.route.provider_oauth_authorize","kind":"route","target":"provider.oauth.authorize","source":"packages/opencode/src/server/instance/provider.ts"}
+{"id":"trace.route.provider_oauth_callback","kind":"route","target":"provider.oauth.callback","source":"packages/opencode/src/server/instance/provider.ts"}
+{"id":"trace.route.pty_connect","kind":"route","target":"pty.connect","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.pty_create","kind":"route","target":"pty.create","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.pty_get","kind":"route","target":"pty.get","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.pty_list","kind":"route","target":"pty.list","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.pty_remove","kind":"route","target":"pty.remove","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.pty_update","kind":"route","target":"pty.update","source":"packages/opencode/src/server/instance/pty.ts"}
+{"id":"trace.route.question_list","kind":"route","target":"question.list","source":"packages/opencode/src/server/instance/question.ts"}
+{"id":"trace.route.question_reject","kind":"route","target":"question.reject","source":"packages/opencode/src/server/instance/question.ts"}
+{"id":"trace.route.question_reply","kind":"route","target":"question.reply","source":"packages/opencode/src/server/instance/question.ts"}
+{"id":"trace.route.session_abort","kind":"route","target":"session.abort","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_children","kind":"route","target":"session.children","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_command","kind":"route","target":"session.command","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_create","kind":"route","target":"session.create","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_delete","kind":"route","target":"session.delete","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_deletemessage","kind":"route","target":"session.deleteMessage","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_diff","kind":"route","target":"session.diff","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_fork","kind":"route","target":"session.fork","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_get","kind":"route","target":"session.get","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_init","kind":"route","target":"session.init","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_list","kind":"route","target":"session.list","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_message","kind":"route","target":"session.message","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_messages","kind":"route","target":"session.messages","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_prompt","kind":"route","target":"session.prompt","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_prompt_async","kind":"route","target":"session.prompt_async","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_revert","kind":"route","target":"session.revert","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_share","kind":"route","target":"session.share","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_shell","kind":"route","target":"session.shell","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_status","kind":"route","target":"session.status","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_summarize","kind":"route","target":"session.summarize","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_todo","kind":"route","target":"session.todo","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_unrevert","kind":"route","target":"session.unrevert","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_unshare","kind":"route","target":"session.unshare","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.session_update","kind":"route","target":"session.update","source":"packages/opencode/src/server/instance/session.ts"}
+{"id":"trace.route.sync_history_list","kind":"route","target":"sync.history.list","source":"packages/opencode/src/server/instance/sync.ts"}
+{"id":"trace.route.sync_replay","kind":"route","target":"sync.replay","source":"packages/opencode/src/server/instance/sync.ts"}
+{"id":"trace.route.tool_ids","kind":"route","target":"tool.ids","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.tool_list","kind":"route","target":"tool.list","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.tui_appendprompt","kind":"route","target":"tui.appendPrompt","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_clearprompt","kind":"route","target":"tui.clearPrompt","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_control_next","kind":"route","target":"tui.control.next","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_control_response","kind":"route","target":"tui.control.response","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_executecommand","kind":"route","target":"tui.executeCommand","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_openhelp","kind":"route","target":"tui.openHelp","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_openmodels","kind":"route","target":"tui.openModels","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_opensessions","kind":"route","target":"tui.openSessions","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_openthemes","kind":"route","target":"tui.openThemes","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_publish","kind":"route","target":"tui.publish","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_selectsession","kind":"route","target":"tui.selectSession","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_showtoast","kind":"route","target":"tui.showToast","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.tui_submitprompt","kind":"route","target":"tui.submitPrompt","source":"packages/opencode/src/server/instance/tui.ts"}
+{"id":"trace.route.vcs_diff","kind":"route","target":"vcs.diff","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.vcs_get","kind":"route","target":"vcs.get","source":"packages/opencode/src/server/instance/index.ts"}
+{"id":"trace.route.worktree_create","kind":"route","target":"worktree.create","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.worktree_list","kind":"route","target":"worktree.list","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.worktree_remove","kind":"route","target":"worktree.remove","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"trace.route.worktree_reset","kind":"route","target":"worktree.reset","source":"packages/opencode/src/server/instance/experimental.ts"}
+{"id":"tui.test.keybind_plugin_test","kind":"tui_test","target":"keybind_plugin_test","source":"packages/opencode/test/cli/tui/keybind-plugin.test.ts"}
+{"id":"tui.test.plugin_add_test","kind":"tui_test","target":"plugin_add_test","source":"packages/opencode/test/cli/tui/plugin-add.test.ts"}
+{"id":"tui.test.plugin_install_test","kind":"tui_test","target":"plugin_install_test","source":"packages/opencode/test/cli/tui/plugin-install.test.ts"}
+{"id":"tui.test.plugin_lifecycle_test","kind":"tui_test","target":"plugin_lifecycle_test","source":"packages/opencode/test/cli/tui/plugin-lifecycle.test.ts"}
+{"id":"tui.test.plugin_loader_entrypoint_test","kind":"tui_test","target":"plugin_loader_entrypoint_test","source":"packages/opencode/test/cli/tui/plugin-loader-entrypoint.test.ts"}
+{"id":"tui.test.plugin_loader_pure_test","kind":"tui_test","target":"plugin_loader_pure_test","source":"packages/opencode/test/cli/tui/plugin-loader-pure.test.ts"}
+{"id":"tui.test.plugin_loader_test","kind":"tui_test","target":"plugin_loader_test","source":"packages/opencode/test/cli/tui/plugin-loader.test.ts"}
+{"id":"tui.test.plugin_toggle_test","kind":"tui_test","target":"plugin_toggle_test","source":"packages/opencode/test/cli/tui/plugin-toggle.test.ts"}
+{"id":"tui.test.slot_replace_test","kind":"tui_test","target":"slot_replace_test","source":"packages/opencode/test/cli/tui/slot-replace.test.tsx"}
+{"id":"tui.test.sync_provider_test","kind":"tui_test","target":"sync_provider_test","source":"packages/opencode/test/cli/tui/sync-provider.test.tsx"}
+{"id":"tui.test.theme_store_test","kind":"tui_test","target":"theme_store_test","source":"packages/opencode/test/cli/tui/theme-store.test.ts"}
+{"id":"tui.test.thread_test","kind":"tui_test","target":"thread_test","source":"packages/opencode/test/cli/tui/thread.test.ts"}
+{"id":"tui.test.transcript_test","kind":"tui_test","target":"transcript_test","source":"packages/opencode/test/cli/tui/transcript.test.ts"}
+{"id":"tui.test.use_event_test","kind":"tui_test","target":"use_event_test","source":"packages/opencode/test/cli/tui/use-event.test.tsx"}

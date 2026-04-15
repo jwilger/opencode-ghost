@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "schema.conformance_kit",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap schema family for evaluator handshakes, profile negotiation, case dispatch, checkpoint emission, and verdict reporting.",
+  "protocol": {
+    "transport": {
+      "kind": "enum",
+      "values": [
+        "stdio_jsonl",
+        "rpc_json",
+        "http_json"
+      ]
+    },
+    "encoding": {
+      "kind": "enum",
+      "values": [
+        "json",
+        "jsonl"
+      ]
+    }
+  },
+  "messages": {
+    "kind": "tagged_union",
+    "discriminant": "kind",
+    "variants": [
+      "hello",
+      "capabilities",
+      "profile_request",
+      "profile_response",
+      "case_offer",
+      "case_accept",
+      "checkpoint",
+      "verdict",
+      "error"
+    ]
+  },
+  "hello": {
+    "required_fields": [
+      "kind",
+      "protocol_version",
+      "implementation_id",
+      "implementation_version"
+    ]
+  },
+  "capabilities": {
+    "required_fields": [
+      "kind",
+      "supported_profiles",
+      "supported_transports",
+      "supported_observations"
+    ],
+    "supported_profiles": {
+      "type": "ordered_array",
+      "item": "string"
+    }
+  },
+  "profile_request": {
+    "required_fields": [
+      "kind",
+      "profile_id"
+    ]
+  },
+  "case_offer": {
+    "required_fields": [
+      "kind",
+      "case_id",
+      "profile_id",
+      "schema_family",
+      "payload"
+    ]
+  },
+  "checkpoint": {
+    "required_fields": [
+      "kind",
+      "case_id",
+      "seq",
+      "observation_kind",
+      "payload"
+    ]
+  },
+  "verdict": {
+    "required_fields": [
+      "kind",
+      "case_id",
+      "status"
+    ],
+    "status": {
+      "kind": "enum",
+      "values": [
+        "pass",
+        "fail",
+        "unsupported",
+        "error"
+      ]
+    }
+  },
+  "error": {
+    "required_fields": [
+      "kind",
+      "code",
+      "message",
+      "retryable"
+    ]
+  },
+  "ordering_rules": [
+    "hello precedes all other messages",
+    "capabilities must be stable within a session",
+    "checkpoint.seq is strictly increasing within a case",
+    "verdict terminates a case"
+  ],
+  "rust_notes": [
+    "All envelopes are discriminated and streamable.",
+    "Ordered arrays should be preserved as received.",
+    "No message relies on map-order semantics."
+  ]
+}

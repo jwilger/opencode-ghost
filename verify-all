@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "$root"
+
+need() {
+  local cmd="$1"
+  if command -v "$cmd" >/dev/null 2>&1; then
+    return
+  fi
+  echo "missing required tool: $cmd" >&2
+  echo "run: nix develop" >&2
+  exit 1
+}
+
+echo "==> bootstrap toolchain"
+need git
+need node
+need bun
+need lean
+need lake
+need quint
+
+git --version
+node --version
+bun --version
+lean --version | sed -n '1p'
+lake --version | sed -n '1p'
+quint --version
+
+echo "==> required bootstrap files"
+for file in flake.nix .gitignore README.md VERIFY.md verify-all lean-toolchain lakefile.toml; do
+  if [[ ! -f "$file" ]]; then
+    echo "missing required file: $file" >&2
+    exit 1
+  fi
+done
+
+echo "==> optional verification hooks"
+hook_dir="$root/script/verify"
+if [[ -d "$hook_dir" ]]; then
+  mapfile -t hooks < <(find "$hook_dir" -mindepth 1 -maxdepth 1 -type f -name '*.sh' | LC_ALL=C sort)
+  for hook in "${hooks[@]}"; do
+    echo "running hook: ${hook#$root/}"
+    bash "$hook"
+  done
+else
+  echo "no hooks found (expected directory: script/verify)"
+fi
+
+echo "==> bootstrap verification complete"

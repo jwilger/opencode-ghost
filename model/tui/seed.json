@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "model.tui.seed",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap abstract TUI model.",
+  "state_axes": [
+    "route",
+    "dialog_stack",
+    "focus",
+    "prompt",
+    "sidebar",
+    "transcript",
+    "theme",
+    "toast"
+  ],
+  "observation_layers": [
+    "interaction",
+    "layout",
+    "frame"
+  ],
+  "invariants": [
+    "dialog_precedence",
+    "focus_locality",
+    "scroll_anchor_stability",
+    "region_visibility"
+  ]
+}

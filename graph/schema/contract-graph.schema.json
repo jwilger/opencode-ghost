@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opencode-ghost.local/graph/schema/contract-graph.schema.json",
+  "title": "opencode-ghost contract graph entry",
+  "description": "JSONL row schema for the canonical contract graph.",
+  "oneOf": [
+    {
+      "title": "node",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "id",
+        "type",
+        "title",
+        "class",
+        "state"
+      ],
+      "properties": {
+        "kind": {
+          "const": "node"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "$ref": "#/$defs/type"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "class": {
+          "$ref": "#/$defs/class"
+        },
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+    {
+      "title": "edge",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "id",
+        "type",
+        "from",
+        "to"
+      ],
+      "properties": {
+        "kind": {
+          "const": "edge"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "$ref": "#/$defs/edge_type"
+        },
+        "from": {
+          "$ref": "#/$defs/id"
+        },
+        "to": {
+          "$ref": "#/$defs/id"
+        },
+        "class": {
+          "$ref": "#/$defs/class"
+        },
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "note": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+    },
+    "class": {
+      "type": "string",
+      "enum": [
+        "normative",
+        "informative",
+        "generated"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "provisional",
+        "normative",
+        "deprecated"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "repo",
+        "implementation",
+        "artifact",
+        "report",
+        "profile",
+        "surface",
+        "world",
+        "claim",
+        "policy"
+      ]
+    },
+    "edge_type": {
+      "type": "string",
+      "enum": [
+        "contains",
+        "generated_from",
+        "includes",
+        "covers",
+        "uses_world",
+        "governs",
+        "certifies",
+        "must_certify_before",
+        "seed_for"
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "iut.runtime",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap contract for runtime implementations evaluated by the opencode-ghost conformance kit.",
+  "goals": [
+    "Define a language-agnostic evaluator boundary for runtime conformance.",
+    "Support Rust and non-Rust implementations without JS-specific embedding assumptions.",
+    "Keep discriminants, ordering, and nullability explicit."
+  ],
+  "process": {
+    "topology": {
+      "kind": "enum",
+      "values": [
+        "cli",
+        "server"
+      ],
+      "note": "Implementations may support one or both topologies."
+    },
+    "launch": {
+      "cli": {
+        "command": "string",
+        "args": [
+          "string"
+        ],
+        "cwd": "string",
+        "env": {
+          "type": "record",
+          "value": "string"
+        }
+      },
+      "server": {
+        "command": "string",
+        "args": [
+          "string"
+        ],
+        "cwd": "string",
+        "env": {
+          "type": "record",
+          "value": "string"
+        },
+        "ready": {
+          "kind": "enum",
+          "values": [
+            "stdio_banner",
+            "tcp_healthcheck",
+            "unix_socket",
+            "explicit_event"
+          ]
+        }
+      }
+    },
+    "shutdown": {
+      "kind": "enum",
+      "values": [
+        "signal",
+        "stdio_request",
+        "http_request"
+      ],
+      "grace_period_ms": "integer"
+    }
+  },
+  "determinism": {
+    "required": true,
+    "channel": {
+      "kind": "enum",
+      "values": [
+        "env",
+        "flag",
+        "config"
+      ]
+    },
+    "requirements": [
+      "Stable event ordering for equivalent inputs.",
+      "Stable identifier generation when seeded.",
+      "No wall-clock dependence without explicit fixture input.",
+      "No nondeterministic network access during conformance unless the profile explicitly permits it."
+    ],
+    "inputs": [
+      "clock",
+      "seed",
+      "paths",
+      "locale",
+      "terminal",
+      "network_mode"
+    ]
+  },
+  "case_transport": {
+    "fixture_ingress": {
+      "kind": "enum",
+      "values": [
+        "stdin_jsonl",
+        "file_path",
+        "http_post"
+      ]
+    },
+    "observation_egress": {
+      "kind": "enum",
+      "values": [
+        "stdout_jsonl",
+        "file_path",
+        "http_stream"
+      ]
+    },
+    "encoding": {
+      "kind": "enum",
+      "values": [
+        "json",
+        "jsonl"
+      ]
+    }
+  },
+  "runtime_case": {
+    "required_fields": [
+      "case_id",
+      "profile_id",
+      "world_id",
+      "inputs",
+      "expected_observation"
+    ],
+    "inputs": {
+      "workspace": "opaque fixture reference",
+      "config": "opaque fixture reference",
+      "request": {
+        "kind": "enum",
+        "values": [
+          "cli_invocation",
+          "http_exchange",
+          "event_replay"
+        ]
+      }
+    },
+    "expected_observation": {
+      "kind": "enum",
+      "values": [
+        "http_response",
+        "event_trace",
+        "state_projection",
+        "error"
+      ]
+    }
+  },
+  "observation": {
+    "ordering": "Observation streams are append-only and order-sensitive.",
+    "records": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "lifecycle",
+        "http_response",
+        "event",
+        "state_projection",
+        "diagnostic",
+        "error"
+      ]
+    },
+    "required_common_fields": [
+      "kind",
+      "case_id",
+      "seq"
+    ]
+  },
+  "errors": {
+    "surface": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "usage_error",
+        "case_error",
+        "runtime_error",
+        "unsupported"
+      ]
+    },
+    "required_fields": [
+      "kind",
+      "code",
+      "message",
+      "retryable"
+    ]
+  },
+  "capabilities": {
+    "advertised_by": "conformance kit handshake",
+    "required_minimum": [
+      "runtime.case.execute",
+      "runtime.observe.stream",
+      "runtime.mode.deterministic"
+    ],
+    "optional": [
+      "runtime.case.batch",
+      "runtime.observe.snapshot",
+      "runtime.transport.http",
+      "runtime.transport.stdio"
+    ]
+  },
+  "profiles": [
+    "core-runtime",
+    "runtime-formal",
+    "integrations-canonical",
+    "security-critical",
+    "full-reference"
+  ],
+  "explicitly_unspecified": [
+    "Exact HTTP route payload schemas.",
+    "Exact event taxonomy beyond discriminant classes.",
+    "Exact state projection fields for each surface."
+  ],
+  "rust_notes": [
+    "All unions are discriminated.",
+    "Optional and nullable fields should remain distinct in downstream schemas.",
+    "Observation order is explicit and must not depend on map iteration."
+  ]
+}

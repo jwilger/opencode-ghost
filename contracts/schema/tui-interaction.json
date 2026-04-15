@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "schema.tui_interaction",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap schema family for TUI interaction scenarios and emitted interaction checkpoints.",
+  "scenario": {
+    "required_fields": [
+      "case_id",
+      "profile_id",
+      "world_id",
+      "terminal",
+      "initial",
+      "events",
+      "expect"
+    ],
+    "terminal": {
+      "required_fields": [
+        "cols",
+        "rows",
+        "color_mode"
+      ]
+    },
+    "events": {
+      "type": "ordered_array",
+      "item": {
+        "kind": "tagged_union",
+        "discriminant": "kind",
+        "variants": [
+          "keyboard",
+          "mouse",
+          "paste",
+          "resize",
+          "timer"
+        ]
+      }
+    },
+    "expect": {
+      "required_fields": [
+        "route",
+        "focus",
+        "dialog_stack"
+      ]
+    }
+  },
+  "checkpoint": {
+    "required_fields": [
+      "kind",
+      "case_id",
+      "seq",
+      "route",
+      "focus",
+      "dialog_stack"
+    ]
+  },
+  "ordering_rules": [
+    "Input events are replayed in listed order",
+    "Checkpoint seq is strictly increasing within a case",
+    "dialog_stack preserves top-to-bottom order"
+  ],
+  "explicitly_unspecified": [
+    "Exact key naming vocabulary",
+    "Exact mouse coordinate normalization",
+    "Exact plugin-specific interaction payloads"
+  ]
+}

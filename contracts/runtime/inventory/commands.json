@@ -1,0 +1,289 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "inventory.runtime.commands",
+  "source_commit": "9640d889baa58fa01ed612a6372ba77462f79d9f",
+  "source_branch": "dev",
+  "count": 70,
+  "items": [
+    {
+      "id": "$0 [project]",
+      "source": "packages/opencode/src/cli/cmd/tui/thread.ts"
+    },
+    {
+      "id": "$0 [query]",
+      "source": "packages/opencode/src/cli/cmd/db.ts"
+    },
+    {
+      "id": "acp",
+      "source": "packages/opencode/src/cli/cmd/acp.ts"
+    },
+    {
+      "id": "add",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "agent",
+      "source": "packages/opencode/src/cli/cmd/agent.ts"
+    },
+    {
+      "id": "agent <name>",
+      "source": "packages/opencode/src/cli/cmd/debug/agent.ts"
+    },
+    {
+      "id": "attach <url>",
+      "source": "packages/opencode/src/cli/cmd/tui/attach.ts"
+    },
+    {
+      "id": "auth [name]",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "config",
+      "source": "packages/opencode/src/cli/cmd/debug/config.ts"
+    },
+    {
+      "id": "console",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "create",
+      "source": "packages/opencode/src/cli/cmd/agent.ts"
+    },
+    {
+      "id": "db",
+      "source": "packages/opencode/src/cli/cmd/db.ts"
+    },
+    {
+      "id": "debug",
+      "source": "packages/opencode/src/cli/cmd/debug/index.ts"
+    },
+    {
+      "id": "debug <name>",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "delete <sessionID>",
+      "source": "packages/opencode/src/cli/cmd/session.ts"
+    },
+    {
+      "id": "diagnostics <file>",
+      "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
+    },
+    {
+      "id": "diff <hash>",
+      "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
+    },
+    {
+      "id": "document-symbols <uri>",
+      "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
+    },
+    {
+      "id": "export [sessionID]",
+      "source": "packages/opencode/src/cli/cmd/export.ts"
+    },
+    {
+      "id": "file",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "files",
+      "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
+    },
+    {
+      "id": "generate",
+      "source": "packages/opencode/src/cli/cmd/generate.ts"
+    },
+    {
+      "id": "github",
+      "source": "packages/opencode/src/cli/cmd/github.ts"
+    },
+    {
+      "id": "import <file>",
+      "source": "packages/opencode/src/cli/cmd/import.ts"
+    },
+    {
+      "id": "install",
+      "source": "packages/opencode/src/cli/cmd/github.ts"
+    },
+    {
+      "id": "list",
+      "source": "packages/opencode/src/cli/cmd/agent.ts"
+    },
+    {
+      "id": "list",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "list",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "list",
+      "source": "packages/opencode/src/cli/cmd/providers.ts"
+    },
+    {
+      "id": "list",
+      "source": "packages/opencode/src/cli/cmd/session.ts"
+    },
+    {
+      "id": "list <path>",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "login [url]",
+      "source": "packages/opencode/src/cli/cmd/providers.ts"
+    },
+    {
+      "id": "login <url>",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "logout",
+      "source": "packages/opencode/src/cli/cmd/providers.ts"
+    },
+    {
+      "id": "logout [email]",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "logout [name]",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "lsp",
+      "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
+    },
+    {
+      "id": "mcp",
+      "source": "packages/opencode/src/cli/cmd/mcp.ts"
+    },
+    {
+      "id": "migrate",
+      "source": "packages/opencode/src/cli/cmd/db.ts"
+    },
+    {
+      "id": "models [provider]",
+      "source": "packages/opencode/src/cli/cmd/models.ts"
+    },
+    {
+      "id": "open",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "orgs",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "patch <hash>",
+      "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
+    },
+    {
+      "id": "path",
+      "source": "packages/opencode/src/cli/cmd/db.ts"
+    },
+    {
+      "id": "paths",
+      "source": "packages/opencode/src/cli/cmd/debug/index.ts"
+    },
+    {
+      "id": "plugin <module>",
+      "source": "packages/opencode/src/cli/cmd/plug.ts"
+    },
+    {
+      "id": "pr <number>",
+      "source": "packages/opencode/src/cli/cmd/pr.ts"
+    },
+    {
+      "id": "providers",
+      "source": "packages/opencode/src/cli/cmd/providers.ts"
+    },
+    {
+      "id": "read <path>",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "rg",
+      "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
+    },
+    {
+      "id": "run",
+      "source": "packages/opencode/src/cli/cmd/github.ts"
+    },
+    {
+      "id": "run [message..]",
+      "source": "packages/opencode/src/cli/cmd/run.ts"
+    },
+    {
+      "id": "scrap",
+      "source": "packages/opencode/src/cli/cmd/debug/scrap.ts"
+    },
+    {
+      "id": "search <pattern>",
+      "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
+    },
+    {
+      "id": "search <query>",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "serve",
+      "source": "packages/opencode/src/cli/cmd/serve.ts"
+    },
+    {
+      "id": "session",
+      "source": "packages/opencode/src/cli/cmd/session.ts"
+    },
+    {
+      "id": "skill",
+      "source": "packages/opencode/src/cli/cmd/debug/skill.ts"
+    },
+    {
+      "id": "snapshot",
+      "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
+    },
+    {
+      "id": "stats",
+      "source": "packages/opencode/src/cli/cmd/stats.ts"
+    },
+    {
+      "id": "status",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "switch",
+      "source": "packages/opencode/src/cli/cmd/account.ts"
+    },
+    {
+      "id": "symbols <query>",
+      "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
+    },
+    {
+      "id": "track",
+      "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
+    },
+    {
+      "id": "tree",
+      "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
+    },
+    {
+      "id": "tree [dir]",
+      "source": "packages/opencode/src/cli/cmd/debug/file.ts"
+    },
+    {
+      "id": "uninstall",
+      "source": "packages/opencode/src/cli/cmd/uninstall.ts"
+    },
+    {
+      "id": "upgrade [target]",
+      "source": "packages/opencode/src/cli/cmd/upgrade.ts"
+    },
+    {
+      "id": "wait",
+      "source": "packages/opencode/src/cli/cmd/debug/index.ts"
+    },
+    {
+      "id": "web",
+      "source": "packages/opencode/src/cli/cmd/web.ts"
+    }
+  ]
+}

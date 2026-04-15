@@ -1,0 +1,453 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "inventory.runtime.routes",
+  "source_commit": "9640d889baa58fa01ed612a6372ba77462f79d9f",
+  "source_branch": "dev",
+  "count": 111,
+  "items": [
+    {
+      "id": "app.agents",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "app.skills",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "command.list",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "config.get",
+      "source": "packages/opencode/src/server/instance/config.ts"
+    },
+    {
+      "id": "config.providers",
+      "source": "packages/opencode/src/server/instance/config.ts"
+    },
+    {
+      "id": "config.update",
+      "source": "packages/opencode/src/server/instance/config.ts"
+    },
+    {
+      "id": "event.subscribe",
+      "source": "packages/opencode/src/server/instance/event.ts"
+    },
+    {
+      "id": "experimental.console.get",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "experimental.console.listOrgs",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "experimental.console.switchOrg",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "experimental.resource.list",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "experimental.session.list",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "experimental.workspace.adaptor.list",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "experimental.workspace.create",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "experimental.workspace.list",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "experimental.workspace.remove",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "experimental.workspace.sessionRestore",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "experimental.workspace.status",
+      "source": "packages/opencode/src/server/instance/workspace.ts"
+    },
+    {
+      "id": "file.list",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "file.read",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "file.status",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "find.files",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "find.symbols",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "find.text",
+      "source": "packages/opencode/src/server/instance/file.ts"
+    },
+    {
+      "id": "formatter.status",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "global.config.get",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "global.config.update",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "global.dispose",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "global.event",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "global.health",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "global.upgrade",
+      "source": "packages/opencode/src/server/instance/global.ts"
+    },
+    {
+      "id": "instance.dispose",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "lsp.status",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "mcp.add",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.auth.authenticate",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.auth.callback",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.auth.remove",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.auth.start",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.connect",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.disconnect",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "mcp.status",
+      "source": "packages/opencode/src/server/instance/mcp.ts"
+    },
+    {
+      "id": "part.delete",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "part.update",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "path.get",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "permission.list",
+      "source": "packages/opencode/src/server/instance/permission.ts"
+    },
+    {
+      "id": "permission.reply",
+      "source": "packages/opencode/src/server/instance/permission.ts"
+    },
+    {
+      "id": "permission.respond",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "project.current",
+      "source": "packages/opencode/src/server/instance/project.ts"
+    },
+    {
+      "id": "project.initGit",
+      "source": "packages/opencode/src/server/instance/project.ts"
+    },
+    {
+      "id": "project.list",
+      "source": "packages/opencode/src/server/instance/project.ts"
+    },
+    {
+      "id": "project.update",
+      "source": "packages/opencode/src/server/instance/project.ts"
+    },
+    {
+      "id": "provider.auth",
+      "source": "packages/opencode/src/server/instance/provider.ts"
+    },
+    {
+      "id": "provider.list",
+      "source": "packages/opencode/src/server/instance/provider.ts"
+    },
+    {
+      "id": "provider.oauth.authorize",
+      "source": "packages/opencode/src/server/instance/provider.ts"
+    },
+    {
+      "id": "provider.oauth.callback",
+      "source": "packages/opencode/src/server/instance/provider.ts"
+    },
+    {
+      "id": "pty.connect",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "pty.create",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "pty.get",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "pty.list",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "pty.remove",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "pty.update",
+      "source": "packages/opencode/src/server/instance/pty.ts"
+    },
+    {
+      "id": "question.list",
+      "source": "packages/opencode/src/server/instance/question.ts"
+    },
+    {
+      "id": "question.reject",
+      "source": "packages/opencode/src/server/instance/question.ts"
+    },
+    {
+      "id": "question.reply",
+      "source": "packages/opencode/src/server/instance/question.ts"
+    },
+    {
+      "id": "session.abort",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.children",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.command",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.create",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.delete",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.deleteMessage",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.diff",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.fork",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.get",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.init",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.list",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.message",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.messages",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.prompt",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.prompt_async",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.revert",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.share",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.shell",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.status",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.summarize",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.todo",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.unrevert",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.unshare",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "session.update",
+      "source": "packages/opencode/src/server/instance/session.ts"
+    },
+    {
+      "id": "sync.history.list",
+      "source": "packages/opencode/src/server/instance/sync.ts"
+    },
+    {
+      "id": "sync.replay",
+      "source": "packages/opencode/src/server/instance/sync.ts"
+    },
+    {
+      "id": "tool.ids",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "tool.list",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "tui.appendPrompt",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.clearPrompt",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.control.next",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.control.response",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.executeCommand",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.openHelp",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.openModels",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.openSessions",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.openThemes",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.publish",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.selectSession",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.showToast",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "tui.submitPrompt",
+      "source": "packages/opencode/src/server/instance/tui.ts"
+    },
+    {
+      "id": "vcs.diff",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "vcs.get",
+      "source": "packages/opencode/src/server/instance/index.ts"
+    },
+    {
+      "id": "worktree.create",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "worktree.list",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "worktree.remove",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    },
+    {
+      "id": "worktree.reset",
+      "source": "packages/opencode/src/server/instance/experimental.ts"
+    }
+  ]
+}

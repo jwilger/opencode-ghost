@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "inventory.tui.tests",
+  "source_commit": "9640d889baa58fa01ed612a6372ba77462f79d9f",
+  "source_branch": "dev",
+  "count": 14,
+  "items": [
+    {
+      "id": "tui.test.keybind_plugin_test",
+      "source": "packages/opencode/test/cli/tui/keybind-plugin.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_add_test",
+      "source": "packages/opencode/test/cli/tui/plugin-add.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_install_test",
+      "source": "packages/opencode/test/cli/tui/plugin-install.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_lifecycle_test",
+      "source": "packages/opencode/test/cli/tui/plugin-lifecycle.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_loader_entrypoint_test",
+      "source": "packages/opencode/test/cli/tui/plugin-loader-entrypoint.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_loader_pure_test",
+      "source": "packages/opencode/test/cli/tui/plugin-loader-pure.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_loader_test",
+      "source": "packages/opencode/test/cli/tui/plugin-loader.test.ts"
+    },
+    {
+      "id": "tui.test.plugin_toggle_test",
+      "source": "packages/opencode/test/cli/tui/plugin-toggle.test.ts"
+    },
+    {
+      "id": "tui.test.slot_replace_test",
+      "source": "packages/opencode/test/cli/tui/slot-replace.test.tsx"
+    },
+    {
+      "id": "tui.test.sync_provider_test",
+      "source": "packages/opencode/test/cli/tui/sync-provider.test.tsx"
+    },
+    {
+      "id": "tui.test.theme_store_test",
+      "source": "packages/opencode/test/cli/tui/theme-store.test.ts"
+    },
+    {
+      "id": "tui.test.thread_test",
+      "source": "packages/opencode/test/cli/tui/thread.test.ts"
+    },
+    {
+      "id": "tui.test.transcript_test",
+      "source": "packages/opencode/test/cli/tui/transcript.test.ts"
+    },
+    {
+      "id": "tui.test.use_event_test",
+      "source": "packages/opencode/test/cli/tui/use-event.test.tsx"
+    }
+  ]
+}

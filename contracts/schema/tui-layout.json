@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "schema.tui_layout",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap schema family for observable TUI layout state independent of exact cell rendering.",
+  "layout": {
+    "required_fields": [
+      "case_id",
+      "seq",
+      "route",
+      "dialog_stack",
+      "focus",
+      "regions",
+      "scroll"
+    ],
+    "regions": {
+      "type": "ordered_array",
+      "item": {
+        "required_fields": [
+          "region_id",
+          "kind",
+          "visible",
+          "bounds"
+        ]
+      }
+    },
+    "scroll": {
+      "type": "ordered_array",
+      "item": {
+        "required_fields": [
+          "region_id",
+          "offset",
+          "anchor"
+        ]
+      }
+    }
+  },
+  "observational_invariants": [
+    "focus_locality",
+    "dialog_precedence",
+    "scroll_anchoring",
+    "transcript_ordering",
+    "semantic_region_visibility"
+  ],
+  "explicitly_unspecified": [
+    "Exact semantic-region taxonomy values",
+    "Exact focus ID vocabulary",
+    "Exact scroll anchor encoding"
+  ],
+  "rust_notes": [
+    "Layout observations should be serializable without renderer-specific object graphs.",
+    "Ordered arrays must remain ordered; region semantics should not rely on map order."
+  ]
+}

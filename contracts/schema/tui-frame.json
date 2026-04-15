@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "schema.tui_frame",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap schema family for certified visible-cell frame parity.",
+  "frame": {
+    "required_fields": [
+      "case_id",
+      "seq",
+      "terminal",
+      "title",
+      "cursor",
+      "cells"
+    ],
+    "terminal": {
+      "required_fields": [
+        "cols",
+        "rows"
+      ]
+    },
+    "cursor": {
+      "required_fields": [
+        "visible",
+        "col",
+        "row"
+      ]
+    },
+    "cells": {
+      "type": "ordered_array",
+      "item": {
+        "required_fields": [
+          "row",
+          "col",
+          "glyph",
+          "width",
+          "style"
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "domain": "visible_cells",
+    "style_representation": "normalized_style_token",
+    "certified_matrix": {
+      "sizes": [
+        "120x40",
+        "160x48"
+      ],
+      "theme": "opencode",
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "platform": "linux_truecolor"
+    }
+  },
+  "ordering_rules": [
+    "cells are ordered row-major",
+    "frame seq is strictly increasing within a case"
+  ],
+  "explicitly_unspecified": [
+    "Final style-token vocabulary",
+    "Offscreen-state representation",
+    "Non-certified size/theme exact parity"
+  ],
+  "rust_notes": [
+    "Cell rows and columns should be integers, not implicit array position.",
+    "Style must be a normalized token, not an implementation-specific object."
+  ]
+}

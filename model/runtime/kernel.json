@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "model.runtime.kernel",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap semantic kernel for opencode-ghost.",
+  "state_axes": [
+    "session",
+    "event_log",
+    "permission",
+    "replay",
+    "project",
+    "worktree"
+  ],
+  "transition_classes": [
+    "session_create",
+    "session_update",
+    "event_apply",
+    "permission_request",
+    "permission_reply",
+    "replay_apply",
+    "worktree_create",
+    "worktree_remove"
+  ],
+  "notes": [
+    "The kernel is intentionally smaller than the full runtime surface.",
+    "Route, CLI, TUI, and provider behavior should refine into this kernel rather than duplicate it."
+  ]
+}

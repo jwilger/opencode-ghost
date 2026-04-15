@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "schema.runtime_case",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap schema family for runtime conformance cases and observations.",
+  "case": {
+    "required_fields": [
+      "case_id",
+      "profile_id",
+      "world_id",
+      "transport",
+      "input",
+      "expect"
+    ],
+    "transport": {
+      "kind": "enum",
+      "values": [
+        "cli",
+        "http",
+        "replay"
+      ]
+    },
+    "input": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "cli_invocation",
+        "http_exchange",
+        "event_replay"
+      ]
+    },
+    "expect": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "response",
+        "event_trace",
+        "state_projection",
+        "error"
+      ]
+    }
+  },
+  "observation": {
+    "required_common_fields": [
+      "kind",
+      "case_id",
+      "seq"
+    ],
+    "kind": {
+      "kind": "enum",
+      "values": [
+        "lifecycle",
+        "response",
+        "event",
+        "state_projection",
+        "diagnostic",
+        "error"
+      ]
+    }
+  },
+  "state_projection": {
+    "note": "Bootstrap family only; exact surface-specific projections will be extracted later.",
+    "required_fields": [
+      "surface",
+      "payload"
+    ]
+  },
+  "ordering_rules": [
+    "Observation records are append-only",
+    "seq is strictly increasing within a case",
+    "event_trace expectations are order-sensitive"
+  ],
+  "explicitly_unspecified": [
+    "Exact per-route HTTP schemas",
+    "Exact event payload fields",
+    "Exact state projection payload vocabulary"
+  ]
+}

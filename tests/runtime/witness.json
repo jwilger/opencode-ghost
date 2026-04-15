@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "test.runtime.witness",
+  "status": "draft",
+  "bootstrap": true,
+  "case_id": "witness.runtime.permission_cycle",
+  "profile_id": "core-runtime",
+  "world_id": "world.permission_session",
+  "goal": "Seven-layer witness slice covering session creation through permission resolution.",
+  "steps": [
+    "session_create",
+    "session_busy",
+    "assistant_output",
+    "permission_request",
+    "permission_reply",
+    "session_idle"
+  ]
+}

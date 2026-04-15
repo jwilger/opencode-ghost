@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "iut.tui",
+  "status": "draft",
+  "bootstrap": true,
+  "summary": "Bootstrap contract for TUI implementations evaluated by the opencode-ghost conformance kit.",
+  "goals": [
+    "Define observable TUI conformance without constraining renderer internals.",
+    "Support deterministic replay of interaction, layout, and frame checkpoints.",
+    "Keep terminal semantics explicit enough for Rust and other non-JS implementations."
+  ],
+  "process": {
+    "topology": {
+      "kind": "enum",
+      "values": [
+        "embedded",
+        "standalone"
+      ]
+    },
+    "launch": {
+      "command": "string",
+      "args": [
+        "string"
+      ],
+      "cwd": "string",
+      "env": {
+        "type": "record",
+        "value": "string"
+      }
+    },
+    "shutdown": {
+      "kind": "enum",
+      "values": [
+        "signal",
+        "stdio_request",
+        "rpc_request"
+      ],
+      "grace_period_ms": "integer"
+    }
+  },
+  "determinism": {
+    "required": true,
+    "requirements": [
+      "Stable frame output for equivalent inputs and terminal geometry.",
+      "No cursor blink or animation jitter in deterministic mode.",
+      "No wall-clock dependence without explicit fixture input.",
+      "No ambient clipboard, terminal color probe, or network behavior unless provided by the fixture."
+    ],
+    "inputs": [
+      "clock",
+      "seed",
+      "terminal.size",
+      "terminal.color_mode",
+      "theme.mode",
+      "workspace",
+      "config"
+    ]
+  },
+  "interaction_transport": {
+    "ingress": {
+      "kind": "enum",
+      "values": [
+        "stdin_jsonl",
+        "rpc",
+        "file_path"
+      ]
+    },
+    "events": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "keyboard",
+        "mouse",
+        "paste",
+        "resize",
+        "timer"
+      ]
+    }
+  },
+  "checkpoint_egress": {
+    "kind": "enum",
+    "values": [
+      "stdout_jsonl",
+      "rpc",
+      "file_path"
+    ],
+    "records": {
+      "kind": "tagged_union",
+      "discriminant": "kind",
+      "variants": [
+        "lifecycle",
+        "interaction",
+        "layout",
+        "frame",
+        "diagnostic",
+        "error"
+      ]
+    }
+  },
+  "required_exports": {
+    "layout": [
+      "route",
+      "dialog_stack",
+      "focus",
+      "semantic_regions",
+      "scroll"
+    ],
+    "frame": [
+      "terminal_size",
+      "cursor",
+      "title",
+      "cells"
+    ]
+  },
+  "capabilities": {
+    "advertised_by": "conformance kit handshake",
+    "required_minimum": [
+      "tui.case.execute",
+      "tui.observe.layout",
+      "tui.observe.frame",
+      "tui.mode.deterministic"
+    ],
+    "optional": [
+      "tui.observe.interaction",
+      "tui.case.batch",
+      "tui.observe.snapshot"
+    ]
+  },
+  "parity": {
+    "observational": [
+      "focus_locality",
+      "dialog_precedence",
+      "scroll_anchoring",
+      "transcript_ordering",
+      "semantic_region_visibility"
+    ],
+    "frame": {
+      "certified_matrix": {
+        "sizes": [
+          "120x40",
+          "160x48"
+        ],
+        "theme": "opencode",
+        "modes": [
+          "dark",
+          "light"
+        ],
+        "platform": "linux_truecolor"
+      },
+      "comparison_domain": "visible_cells"
+    }
+  },
+  "explicitly_unspecified": [
+    "Renderer internals and widget architecture.",
+    "Non-certified terminal sizes and themes beyond behavioral parity.",
+    "Exact plugin-rendered visuals for arbitrary third-party plugins."
+  ],
+  "rust_notes": [
+    "The contract requires observable equivalence, not renderer identity.",
+    "Frame cells and layout exports should be serializable without JS runtime concepts.",
+    "Input event discriminants should remain stable and order-sensitive."
+  ]
+}
