@@ -26,6 +26,8 @@
 | `artifact.case.runtime_permission_cycle` | `artifact` | `normative` | `provisional` | `contracts/runtime/cases/witness.permission_cycle.json` |
 | `artifact.evidence.runtime_permission_cycle_commuting` | `artifact` | `generated` | `provisional` | `evidence/traceability/commuting.runtime.permission_cycle.json` |
 | `artifact.evidence.opencode_runtime_formal_transcript` | `artifact` | `generated` | `provisional` | `evidence/traceability/opencode_source.runtime_formal.permission_cycle.jsonl` |
+| `artifact.case.tui_permission_view` | `artifact` | `normative` | `provisional` | `contracts/tui/cases/witness.permission_view.json` |
+| `artifact.evidence.tui_permission_view_commuting` | `artifact` | `generated` | `provisional` | `evidence/traceability/commuting.tui.permission_view.json` |
 | `world.minimal_repo` | `world` | `normative` | `draft` |  |
 | `world.permission_session` | `world` | `normative` | `draft` |  |
 | `claim.source_first_certification` | `claim` | `normative` | `provisional` |  |
@@ -36,6 +38,7 @@
 | `claim.runtime.witness_final` | `claim` | `normative` | `provisional` |  |
 | `claim.runtime.commuting.permission_cycle` | `claim` | `normative` | `provisional` |  |
 | `claim.runtime.source_certified.permission_cycle` | `claim` | `normative` | `provisional` |  |
+| `claim.tui.commuting.permission_view` | `claim` | `normative` | `provisional` |  |
 | `report.claims_ledger` | `report` | `generated` | `draft` | `claims-ledger.md` |
 | `report.formalization_inventory` | `report` | `generated` | `draft` | `formalization-inventory.md` |
 | `report.completeness_matrix` | `report` | `generated` | `draft` | `completeness-matrix.md` |
