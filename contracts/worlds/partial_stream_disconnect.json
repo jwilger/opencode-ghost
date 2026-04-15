@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.partial_stream_disconnect",
+  "kind": "adversarial",
+  "setup": {
+    "stream": "partial_disconnect"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.integrations"
+  ],
+  "profiles": [
+    "runtime-formal",
+    "integrations-canonical"
+  ]
+}

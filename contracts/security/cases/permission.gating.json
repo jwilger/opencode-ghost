@@ -4,7 +4,7 @@
   "status": "provisional",
   "case_id": "witness.security.permission_gating",
   "profile_id": "security-critical",
-  "world_id": "world.permission_session",
+  "world_id": "world.permission_reject_session",
   "expect": {
     "kind": "permission_gate",
     "observation_space": {

@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.permission_reject_session",
+  "kind": "adversarial",
+  "setup": {
+    "permission": "rejected"
+  },
+  "surfaces": [
+    "surface.runtime",
+    "surface.security",
+    "surface.kernel"
+  ],
+  "profiles": [
+    "runtime-formal",
+    "security-critical"
+  ]
+}

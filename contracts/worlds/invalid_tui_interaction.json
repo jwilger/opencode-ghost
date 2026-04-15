@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.invalid_tui_interaction",
+  "kind": "adversarial",
+  "setup": {
+    "interaction": "invalid_sequence"
+  },
+  "surfaces": [
+    "surface.tui"
+  ],
+  "profiles": [
+    "tui-certified"
+  ]
+}

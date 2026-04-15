@@ -1,7 +1,7 @@
 {
   "case_id": "witness.runtime.permission_reject",
   "profile_id": "runtime-formal",
-  "world_id": "world.permission_session",
+  "world_id": "world.permission_reject_session",
   "observation_space": {
     "projection": "permission_reject_projection",
     "equivalence": "exact_json",

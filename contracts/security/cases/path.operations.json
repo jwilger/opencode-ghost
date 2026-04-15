@@ -4,7 +4,7 @@
   "status": "provisional",
   "case_id": "witness.security.path_operations",
   "profile_id": "security-critical",
-  "world_id": "world.minimal_repo",
+  "world_id": "world.path_traversal_request",
   "expect": {
     "kind": "route_projection",
     "observation_space": {

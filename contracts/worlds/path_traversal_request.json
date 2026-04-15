@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.world",
+  "status": "provisional",
+  "world_id": "world.path_traversal_request",
+  "kind": "adversarial",
+  "setup": {
+    "filesystem": "path_traversal_attempt"
+  },
+  "surfaces": [
+    "surface.security",
+    "surface.runtime"
+  ],
+  "profiles": [
+    "security-critical"
+  ]
+}
