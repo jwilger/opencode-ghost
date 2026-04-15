@@ -7,6 +7,18 @@
   "profile_id": "tui-certified",
   "world_id": "world.permission_session",
   "goal": "Bootstrap witness for session screen plus permission view parity.",
+  "required_surfaces": [
+    "session",
+    "permission"
+  ],
+  "required_tui_routes": [
+    "tui.file.thread",
+    "tui.file.dialog_session_list"
+  ],
+  "required_tests": [
+    "tui.test.thread_test_ts",
+    "tui.test.transcript_test_ts"
+  ],
   "surfaces": [
     "session",
     "permission"

@@ -6,447 +6,558 @@
   "count": 111,
   "items": [
     {
-      "id": "app.agents",
+      "stable_id": "route.app_agents",
+      "operation_id": "app.agents",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "app.skills",
+      "stable_id": "route.app_skills",
+      "operation_id": "app.skills",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "command.list",
+      "stable_id": "route.command_list",
+      "operation_id": "command.list",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "config.get",
+      "stable_id": "route.config_get",
+      "operation_id": "config.get",
       "source": "packages/opencode/src/server/instance/config.ts"
     },
     {
-      "id": "config.providers",
+      "stable_id": "route.config_providers",
+      "operation_id": "config.providers",
       "source": "packages/opencode/src/server/instance/config.ts"
     },
     {
-      "id": "config.update",
+      "stable_id": "route.config_update",
+      "operation_id": "config.update",
       "source": "packages/opencode/src/server/instance/config.ts"
     },
     {
-      "id": "event.subscribe",
+      "stable_id": "route.event_subscribe",
+      "operation_id": "event.subscribe",
       "source": "packages/opencode/src/server/instance/event.ts"
     },
     {
-      "id": "experimental.console.get",
+      "stable_id": "route.experimental_console_get",
+      "operation_id": "experimental.console.get",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "experimental.console.listOrgs",
+      "stable_id": "route.experimental_console_listorgs",
+      "operation_id": "experimental.console.listOrgs",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "experimental.console.switchOrg",
+      "stable_id": "route.experimental_console_switchorg",
+      "operation_id": "experimental.console.switchOrg",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "experimental.resource.list",
+      "stable_id": "route.experimental_resource_list",
+      "operation_id": "experimental.resource.list",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "experimental.session.list",
+      "stable_id": "route.experimental_session_list",
+      "operation_id": "experimental.session.list",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "experimental.workspace.adaptor.list",
+      "stable_id": "route.experimental_workspace_adaptor_list",
+      "operation_id": "experimental.workspace.adaptor.list",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "experimental.workspace.create",
+      "stable_id": "route.experimental_workspace_create",
+      "operation_id": "experimental.workspace.create",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "experimental.workspace.list",
+      "stable_id": "route.experimental_workspace_list",
+      "operation_id": "experimental.workspace.list",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "experimental.workspace.remove",
+      "stable_id": "route.experimental_workspace_remove",
+      "operation_id": "experimental.workspace.remove",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "experimental.workspace.sessionRestore",
+      "stable_id": "route.experimental_workspace_sessionrestore",
+      "operation_id": "experimental.workspace.sessionRestore",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "experimental.workspace.status",
+      "stable_id": "route.experimental_workspace_status",
+      "operation_id": "experimental.workspace.status",
       "source": "packages/opencode/src/server/instance/workspace.ts"
     },
     {
-      "id": "file.list",
+      "stable_id": "route.file_list",
+      "operation_id": "file.list",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "file.read",
+      "stable_id": "route.file_read",
+      "operation_id": "file.read",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "file.status",
+      "stable_id": "route.file_status",
+      "operation_id": "file.status",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "find.files",
+      "stable_id": "route.find_files",
+      "operation_id": "find.files",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "find.symbols",
+      "stable_id": "route.find_symbols",
+      "operation_id": "find.symbols",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "find.text",
+      "stable_id": "route.find_text",
+      "operation_id": "find.text",
       "source": "packages/opencode/src/server/instance/file.ts"
     },
     {
-      "id": "formatter.status",
+      "stable_id": "route.formatter_status",
+      "operation_id": "formatter.status",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "global.config.get",
+      "stable_id": "route.global_config_get",
+      "operation_id": "global.config.get",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "global.config.update",
+      "stable_id": "route.global_config_update",
+      "operation_id": "global.config.update",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "global.dispose",
+      "stable_id": "route.global_dispose",
+      "operation_id": "global.dispose",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "global.event",
+      "stable_id": "route.global_event",
+      "operation_id": "global.event",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "global.health",
+      "stable_id": "route.global_health",
+      "operation_id": "global.health",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "global.upgrade",
+      "stable_id": "route.global_upgrade",
+      "operation_id": "global.upgrade",
       "source": "packages/opencode/src/server/instance/global.ts"
     },
     {
-      "id": "instance.dispose",
+      "stable_id": "route.instance_dispose",
+      "operation_id": "instance.dispose",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "lsp.status",
+      "stable_id": "route.lsp_status",
+      "operation_id": "lsp.status",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "mcp.add",
+      "stable_id": "route.mcp_add",
+      "operation_id": "mcp.add",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.auth.authenticate",
+      "stable_id": "route.mcp_auth_authenticate",
+      "operation_id": "mcp.auth.authenticate",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.auth.callback",
+      "stable_id": "route.mcp_auth_callback",
+      "operation_id": "mcp.auth.callback",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.auth.remove",
+      "stable_id": "route.mcp_auth_remove",
+      "operation_id": "mcp.auth.remove",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.auth.start",
+      "stable_id": "route.mcp_auth_start",
+      "operation_id": "mcp.auth.start",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.connect",
+      "stable_id": "route.mcp_connect",
+      "operation_id": "mcp.connect",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.disconnect",
+      "stable_id": "route.mcp_disconnect",
+      "operation_id": "mcp.disconnect",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "mcp.status",
+      "stable_id": "route.mcp_status",
+      "operation_id": "mcp.status",
       "source": "packages/opencode/src/server/instance/mcp.ts"
     },
     {
-      "id": "part.delete",
+      "stable_id": "route.part_delete",
+      "operation_id": "part.delete",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "part.update",
+      "stable_id": "route.part_update",
+      "operation_id": "part.update",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "path.get",
+      "stable_id": "route.path_get",
+      "operation_id": "path.get",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "permission.list",
+      "stable_id": "route.permission_list",
+      "operation_id": "permission.list",
       "source": "packages/opencode/src/server/instance/permission.ts"
     },
     {
-      "id": "permission.reply",
+      "stable_id": "route.permission_reply",
+      "operation_id": "permission.reply",
       "source": "packages/opencode/src/server/instance/permission.ts"
     },
     {
-      "id": "permission.respond",
+      "stable_id": "route.permission_respond",
+      "operation_id": "permission.respond",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "project.current",
+      "stable_id": "route.project_current",
+      "operation_id": "project.current",
       "source": "packages/opencode/src/server/instance/project.ts"
     },
     {
-      "id": "project.initGit",
+      "stable_id": "route.project_initgit",
+      "operation_id": "project.initGit",
       "source": "packages/opencode/src/server/instance/project.ts"
     },
     {
-      "id": "project.list",
+      "stable_id": "route.project_list",
+      "operation_id": "project.list",
       "source": "packages/opencode/src/server/instance/project.ts"
     },
     {
-      "id": "project.update",
+      "stable_id": "route.project_update",
+      "operation_id": "project.update",
       "source": "packages/opencode/src/server/instance/project.ts"
     },
     {
-      "id": "provider.auth",
+      "stable_id": "route.provider_auth",
+      "operation_id": "provider.auth",
       "source": "packages/opencode/src/server/instance/provider.ts"
     },
     {
-      "id": "provider.list",
+      "stable_id": "route.provider_list",
+      "operation_id": "provider.list",
       "source": "packages/opencode/src/server/instance/provider.ts"
     },
     {
-      "id": "provider.oauth.authorize",
+      "stable_id": "route.provider_oauth_authorize",
+      "operation_id": "provider.oauth.authorize",
       "source": "packages/opencode/src/server/instance/provider.ts"
     },
     {
-      "id": "provider.oauth.callback",
+      "stable_id": "route.provider_oauth_callback",
+      "operation_id": "provider.oauth.callback",
       "source": "packages/opencode/src/server/instance/provider.ts"
     },
     {
-      "id": "pty.connect",
+      "stable_id": "route.pty_connect",
+      "operation_id": "pty.connect",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "pty.create",
+      "stable_id": "route.pty_create",
+      "operation_id": "pty.create",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "pty.get",
+      "stable_id": "route.pty_get",
+      "operation_id": "pty.get",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "pty.list",
+      "stable_id": "route.pty_list",
+      "operation_id": "pty.list",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "pty.remove",
+      "stable_id": "route.pty_remove",
+      "operation_id": "pty.remove",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "pty.update",
+      "stable_id": "route.pty_update",
+      "operation_id": "pty.update",
       "source": "packages/opencode/src/server/instance/pty.ts"
     },
     {
-      "id": "question.list",
+      "stable_id": "route.question_list",
+      "operation_id": "question.list",
       "source": "packages/opencode/src/server/instance/question.ts"
     },
     {
-      "id": "question.reject",
+      "stable_id": "route.question_reject",
+      "operation_id": "question.reject",
       "source": "packages/opencode/src/server/instance/question.ts"
     },
     {
-      "id": "question.reply",
+      "stable_id": "route.question_reply",
+      "operation_id": "question.reply",
       "source": "packages/opencode/src/server/instance/question.ts"
     },
     {
-      "id": "session.abort",
+      "stable_id": "route.session_abort",
+      "operation_id": "session.abort",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.children",
+      "stable_id": "route.session_children",
+      "operation_id": "session.children",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.command",
+      "stable_id": "route.session_command",
+      "operation_id": "session.command",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.create",
+      "stable_id": "route.session_create",
+      "operation_id": "session.create",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.delete",
+      "stable_id": "route.session_delete",
+      "operation_id": "session.delete",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.deleteMessage",
+      "stable_id": "route.session_deletemessage",
+      "operation_id": "session.deleteMessage",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.diff",
+      "stable_id": "route.session_diff",
+      "operation_id": "session.diff",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.fork",
+      "stable_id": "route.session_fork",
+      "operation_id": "session.fork",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.get",
+      "stable_id": "route.session_get",
+      "operation_id": "session.get",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.init",
+      "stable_id": "route.session_init",
+      "operation_id": "session.init",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.list",
+      "stable_id": "route.session_list",
+      "operation_id": "session.list",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.message",
+      "stable_id": "route.session_message",
+      "operation_id": "session.message",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.messages",
+      "stable_id": "route.session_messages",
+      "operation_id": "session.messages",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.prompt",
+      "stable_id": "route.session_prompt",
+      "operation_id": "session.prompt",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.prompt_async",
+      "stable_id": "route.session_prompt_async",
+      "operation_id": "session.prompt_async",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.revert",
+      "stable_id": "route.session_revert",
+      "operation_id": "session.revert",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.share",
+      "stable_id": "route.session_share",
+      "operation_id": "session.share",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.shell",
+      "stable_id": "route.session_shell",
+      "operation_id": "session.shell",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.status",
+      "stable_id": "route.session_status",
+      "operation_id": "session.status",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.summarize",
+      "stable_id": "route.session_summarize",
+      "operation_id": "session.summarize",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.todo",
+      "stable_id": "route.session_todo",
+      "operation_id": "session.todo",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.unrevert",
+      "stable_id": "route.session_unrevert",
+      "operation_id": "session.unrevert",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.unshare",
+      "stable_id": "route.session_unshare",
+      "operation_id": "session.unshare",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "session.update",
+      "stable_id": "route.session_update",
+      "operation_id": "session.update",
       "source": "packages/opencode/src/server/instance/session.ts"
     },
     {
-      "id": "sync.history.list",
+      "stable_id": "route.sync_history_list",
+      "operation_id": "sync.history.list",
       "source": "packages/opencode/src/server/instance/sync.ts"
     },
     {
-      "id": "sync.replay",
+      "stable_id": "route.sync_replay",
+      "operation_id": "sync.replay",
       "source": "packages/opencode/src/server/instance/sync.ts"
     },
     {
-      "id": "tool.ids",
+      "stable_id": "route.tool_ids",
+      "operation_id": "tool.ids",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "tool.list",
+      "stable_id": "route.tool_list",
+      "operation_id": "tool.list",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "tui.appendPrompt",
+      "stable_id": "route.tui_appendprompt",
+      "operation_id": "tui.appendPrompt",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.clearPrompt",
+      "stable_id": "route.tui_clearprompt",
+      "operation_id": "tui.clearPrompt",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.control.next",
+      "stable_id": "route.tui_control_next",
+      "operation_id": "tui.control.next",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.control.response",
+      "stable_id": "route.tui_control_response",
+      "operation_id": "tui.control.response",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.executeCommand",
+      "stable_id": "route.tui_executecommand",
+      "operation_id": "tui.executeCommand",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.openHelp",
+      "stable_id": "route.tui_openhelp",
+      "operation_id": "tui.openHelp",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.openModels",
+      "stable_id": "route.tui_openmodels",
+      "operation_id": "tui.openModels",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.openSessions",
+      "stable_id": "route.tui_opensessions",
+      "operation_id": "tui.openSessions",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.openThemes",
+      "stable_id": "route.tui_openthemes",
+      "operation_id": "tui.openThemes",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.publish",
+      "stable_id": "route.tui_publish",
+      "operation_id": "tui.publish",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.selectSession",
+      "stable_id": "route.tui_selectsession",
+      "operation_id": "tui.selectSession",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.showToast",
+      "stable_id": "route.tui_showtoast",
+      "operation_id": "tui.showToast",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "tui.submitPrompt",
+      "stable_id": "route.tui_submitprompt",
+      "operation_id": "tui.submitPrompt",
       "source": "packages/opencode/src/server/instance/tui.ts"
     },
     {
-      "id": "vcs.diff",
+      "stable_id": "route.vcs_diff",
+      "operation_id": "vcs.diff",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "vcs.get",
+      "stable_id": "route.vcs_get",
+      "operation_id": "vcs.get",
       "source": "packages/opencode/src/server/instance/index.ts"
     },
     {
-      "id": "worktree.create",
+      "stable_id": "route.worktree_create",
+      "operation_id": "worktree.create",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "worktree.list",
+      "stable_id": "route.worktree_list",
+      "operation_id": "worktree.list",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "worktree.remove",
+      "stable_id": "route.worktree_remove",
+      "operation_id": "worktree.remove",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     },
     {
-      "id": "worktree.reset",
+      "stable_id": "route.worktree_reset",
+      "operation_id": "worktree.reset",
       "source": "packages/opencode/src/server/instance/experimental.ts"
     }
   ]

@@ -26,6 +26,7 @@ const list = async (glob: string) => {
 const rel = (path: string) => relative(src, path)
 const text = async (path: string) => Bun.file(path).text()
 const j = (x: unknown) => JSON.stringify(x, null, 2) + "\n"
+const slug = (x: string) => x.replace(/[^a-zA-Z0-9]+/g, "_").replace(/^_+|_+$/g, "").toLowerCase()
 
 const ids = async (glob: string, re: RegExp) =>
   (
@@ -43,7 +44,11 @@ const ids = async (glob: string, re: RegExp) =>
     .sort((a, b) => a.id.localeCompare(b.id) || a.source.localeCompare(b.source))
 
 const routes = async () => {
-  const items = await ids("packages/opencode/src/server/instance/**/*.ts", /operationId:\s*"([^"]+)"/g)
+  const items = (await ids("packages/opencode/src/server/instance/**/*.ts", /operationId:\s*"([^"]+)"/g)).map((x) => ({
+    stable_id: `route.${slug(x.id)}`,
+    operation_id: x.id,
+    source: x.source,
+  }))
   return {
     schema_version: "0.1.0",
     artifact_family: "inventory.runtime.routes",
@@ -55,7 +60,11 @@ const routes = async () => {
 }
 
 const cmds = async () => {
-  const items = await ids("packages/opencode/src/cli/cmd/**/*.ts", /command:\s*"([^"]+)"/g)
+  const items = (await ids("packages/opencode/src/cli/cmd/**/*.ts", /command:\s*"([^"]+)"/g)).map((x, i) => ({
+    stable_id: `command.${slug(x.id)}.${slug(x.source.split("/").at(-1) || `${i}`)}`,
+    command: x.id,
+    source: x.source,
+  }))
   return {
     schema_version: "0.1.0",
     artifact_family: "inventory.runtime.commands",
@@ -125,7 +134,7 @@ const tui = async () => {
 
 const tests = async () => {
   const items = (await list("packages/opencode/test/cli/tui/**/*.{ts,tsx}")).map((path) => ({
-    id: `tui.test.${rel(path).split("/").at(-1)!.replace(/\.[^.]+$/, "").replace(/[^a-zA-Z0-9]+/g, "_").toLowerCase()}`,
+    id: `tui.test.${slug(rel(path).split("/").at(-1)!)}`,
     source: rel(path),
   }))
   return {
@@ -143,18 +152,20 @@ const trace = async () => {
   for (const item of (await routes()).items)
     out.push(
       JSON.stringify({
-        id: `trace.route.${item.id.replace(/[^a-zA-Z0-9]+/g, "_").toLowerCase()}`,
+        id: `trace.${item.stable_id}`,
         kind: "route",
-        target: item.id,
+        target: item.operation_id,
+        stable_id: item.stable_id,
         source: item.source,
       }),
     )
   for (const item of (await cmds()).items)
     out.push(
       JSON.stringify({
-        id: `trace.command.${item.id.replace(/[^a-zA-Z0-9]+/g, "_").toLowerCase()}`,
+        id: `trace.${item.stable_id}`,
         kind: "command",
-        target: item.id,
+        target: item.command,
+        stable_id: item.stable_id,
         source: item.source,
       }),
     )

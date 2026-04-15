@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contracts.tui.certified",
+  "status": "draft",
+  "bootstrap": true,
+  "matrix": {
+    "sizes": [
+      "120x40",
+      "160x48"
+    ],
+    "theme": "opencode",
+    "modes": [
+      "dark",
+      "light"
+    ],
+    "platform": "linux-truecolor"
+  },
+  "screens": [
+    {
+      "id": "tui.screen.session",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/cli/cmd/tui/thread.ts"
+    },
+    {
+      "id": "tui.screen.permission",
+      "layers": [
+        "interaction",
+        "layout",
+        "frame"
+      ],
+      "source_hint": "packages/opencode/src/server/instance/tui.ts"
+    }
+  ]
+}

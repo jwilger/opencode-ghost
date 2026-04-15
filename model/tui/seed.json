@@ -24,5 +24,17 @@
     "focus_locality",
     "scroll_anchor_stability",
     "region_visibility"
+  ],
+  "seed_routes": [
+    "tui.file.thread",
+    "tui.file.home"
+  ],
+  "seed_dialogs": [
+    "tui.file.dialog_session_list",
+    "tui.file.dialog_theme_list"
+  ],
+  "witness_surfaces": [
+    "tui.file.thread",
+    "tui.file.dialog_session_list"
   ]
 }

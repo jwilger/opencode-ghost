@@ -6,59 +6,59 @@
   "count": 14,
   "items": [
     {
-      "id": "tui.test.keybind_plugin_test",
+      "id": "tui.test.keybind_plugin_test_ts",
       "source": "packages/opencode/test/cli/tui/keybind-plugin.test.ts"
     },
     {
-      "id": "tui.test.plugin_add_test",
+      "id": "tui.test.plugin_add_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-add.test.ts"
     },
     {
-      "id": "tui.test.plugin_install_test",
+      "id": "tui.test.plugin_install_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-install.test.ts"
     },
     {
-      "id": "tui.test.plugin_lifecycle_test",
+      "id": "tui.test.plugin_lifecycle_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-lifecycle.test.ts"
     },
     {
-      "id": "tui.test.plugin_loader_entrypoint_test",
+      "id": "tui.test.plugin_loader_entrypoint_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-loader-entrypoint.test.ts"
     },
     {
-      "id": "tui.test.plugin_loader_pure_test",
+      "id": "tui.test.plugin_loader_pure_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-loader-pure.test.ts"
     },
     {
-      "id": "tui.test.plugin_loader_test",
+      "id": "tui.test.plugin_loader_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-loader.test.ts"
     },
     {
-      "id": "tui.test.plugin_toggle_test",
+      "id": "tui.test.plugin_toggle_test_ts",
       "source": "packages/opencode/test/cli/tui/plugin-toggle.test.ts"
     },
     {
-      "id": "tui.test.slot_replace_test",
+      "id": "tui.test.slot_replace_test_tsx",
       "source": "packages/opencode/test/cli/tui/slot-replace.test.tsx"
     },
     {
-      "id": "tui.test.sync_provider_test",
+      "id": "tui.test.sync_provider_test_tsx",
       "source": "packages/opencode/test/cli/tui/sync-provider.test.tsx"
     },
     {
-      "id": "tui.test.theme_store_test",
+      "id": "tui.test.theme_store_test_ts",
       "source": "packages/opencode/test/cli/tui/theme-store.test.ts"
     },
     {
-      "id": "tui.test.thread_test",
+      "id": "tui.test.thread_test_ts",
       "source": "packages/opencode/test/cli/tui/thread.test.ts"
     },
     {
-      "id": "tui.test.transcript_test",
+      "id": "tui.test.transcript_test_ts",
       "source": "packages/opencode/test/cli/tui/transcript.test.ts"
     },
     {
-      "id": "tui.test.use_event_test",
+      "id": "tui.test.use_event_test_tsx",
       "source": "packages/opencode/test/cli/tui/use-event.test.tsx"
     }
   ]

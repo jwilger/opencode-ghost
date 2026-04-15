@@ -7,6 +7,12 @@
   "profile_id": "core-runtime",
   "world_id": "world.permission_session",
   "goal": "Seven-layer witness slice covering session creation through permission resolution.",
+  "required_routes": [
+    "session.create",
+    "session.prompt",
+    "permission.reply",
+    "session.status"
+  ],
   "steps": [
     "session_create",
     "session_busy",

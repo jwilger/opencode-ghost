@@ -6,283 +6,353 @@
   "count": 70,
   "items": [
     {
-      "id": "$0 [project]",
+      "stable_id": "command.0_project.thread_ts",
+      "command": "$0 [project]",
       "source": "packages/opencode/src/cli/cmd/tui/thread.ts"
     },
     {
-      "id": "$0 [query]",
+      "stable_id": "command.0_query.db_ts",
+      "command": "$0 [query]",
       "source": "packages/opencode/src/cli/cmd/db.ts"
     },
     {
-      "id": "acp",
+      "stable_id": "command.acp.acp_ts",
+      "command": "acp",
       "source": "packages/opencode/src/cli/cmd/acp.ts"
     },
     {
-      "id": "add",
+      "stable_id": "command.add.mcp_ts",
+      "command": "add",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "agent",
+      "stable_id": "command.agent.agent_ts",
+      "command": "agent",
       "source": "packages/opencode/src/cli/cmd/agent.ts"
     },
     {
-      "id": "agent <name>",
+      "stable_id": "command.agent_name.agent_ts",
+      "command": "agent <name>",
       "source": "packages/opencode/src/cli/cmd/debug/agent.ts"
     },
     {
-      "id": "attach <url>",
+      "stable_id": "command.attach_url.attach_ts",
+      "command": "attach <url>",
       "source": "packages/opencode/src/cli/cmd/tui/attach.ts"
     },
     {
-      "id": "auth [name]",
+      "stable_id": "command.auth_name.mcp_ts",
+      "command": "auth [name]",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "config",
+      "stable_id": "command.config.config_ts",
+      "command": "config",
       "source": "packages/opencode/src/cli/cmd/debug/config.ts"
     },
     {
-      "id": "console",
+      "stable_id": "command.console.account_ts",
+      "command": "console",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "create",
+      "stable_id": "command.create.agent_ts",
+      "command": "create",
       "source": "packages/opencode/src/cli/cmd/agent.ts"
     },
     {
-      "id": "db",
+      "stable_id": "command.db.db_ts",
+      "command": "db",
       "source": "packages/opencode/src/cli/cmd/db.ts"
     },
     {
-      "id": "debug",
+      "stable_id": "command.debug.index_ts",
+      "command": "debug",
       "source": "packages/opencode/src/cli/cmd/debug/index.ts"
     },
     {
-      "id": "debug <name>",
+      "stable_id": "command.debug_name.mcp_ts",
+      "command": "debug <name>",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "delete <sessionID>",
+      "stable_id": "command.delete_sessionid.session_ts",
+      "command": "delete <sessionID>",
       "source": "packages/opencode/src/cli/cmd/session.ts"
     },
     {
-      "id": "diagnostics <file>",
+      "stable_id": "command.diagnostics_file.lsp_ts",
+      "command": "diagnostics <file>",
       "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
     },
     {
-      "id": "diff <hash>",
+      "stable_id": "command.diff_hash.snapshot_ts",
+      "command": "diff <hash>",
       "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
     },
     {
-      "id": "document-symbols <uri>",
+      "stable_id": "command.document_symbols_uri.lsp_ts",
+      "command": "document-symbols <uri>",
       "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
     },
     {
-      "id": "export [sessionID]",
+      "stable_id": "command.export_sessionid.export_ts",
+      "command": "export [sessionID]",
       "source": "packages/opencode/src/cli/cmd/export.ts"
     },
     {
-      "id": "file",
+      "stable_id": "command.file.file_ts",
+      "command": "file",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "files",
+      "stable_id": "command.files.ripgrep_ts",
+      "command": "files",
       "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
     },
     {
-      "id": "generate",
+      "stable_id": "command.generate.generate_ts",
+      "command": "generate",
       "source": "packages/opencode/src/cli/cmd/generate.ts"
     },
     {
-      "id": "github",
+      "stable_id": "command.github.github_ts",
+      "command": "github",
       "source": "packages/opencode/src/cli/cmd/github.ts"
     },
     {
-      "id": "import <file>",
+      "stable_id": "command.import_file.import_ts",
+      "command": "import <file>",
       "source": "packages/opencode/src/cli/cmd/import.ts"
     },
     {
-      "id": "install",
+      "stable_id": "command.install.github_ts",
+      "command": "install",
       "source": "packages/opencode/src/cli/cmd/github.ts"
     },
     {
-      "id": "list",
+      "stable_id": "command.list.agent_ts",
+      "command": "list",
       "source": "packages/opencode/src/cli/cmd/agent.ts"
     },
     {
-      "id": "list",
+      "stable_id": "command.list.mcp_ts",
+      "command": "list",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "list",
+      "stable_id": "command.list.mcp_ts",
+      "command": "list",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "list",
+      "stable_id": "command.list.providers_ts",
+      "command": "list",
       "source": "packages/opencode/src/cli/cmd/providers.ts"
     },
     {
-      "id": "list",
+      "stable_id": "command.list.session_ts",
+      "command": "list",
       "source": "packages/opencode/src/cli/cmd/session.ts"
     },
     {
-      "id": "list <path>",
+      "stable_id": "command.list_path.file_ts",
+      "command": "list <path>",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "login [url]",
+      "stable_id": "command.login_url.providers_ts",
+      "command": "login [url]",
       "source": "packages/opencode/src/cli/cmd/providers.ts"
     },
     {
-      "id": "login <url>",
+      "stable_id": "command.login_url.account_ts",
+      "command": "login <url>",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "logout",
+      "stable_id": "command.logout.providers_ts",
+      "command": "logout",
       "source": "packages/opencode/src/cli/cmd/providers.ts"
     },
     {
-      "id": "logout [email]",
+      "stable_id": "command.logout_email.account_ts",
+      "command": "logout [email]",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "logout [name]",
+      "stable_id": "command.logout_name.mcp_ts",
+      "command": "logout [name]",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "lsp",
+      "stable_id": "command.lsp.lsp_ts",
+      "command": "lsp",
       "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
     },
     {
-      "id": "mcp",
+      "stable_id": "command.mcp.mcp_ts",
+      "command": "mcp",
       "source": "packages/opencode/src/cli/cmd/mcp.ts"
     },
     {
-      "id": "migrate",
+      "stable_id": "command.migrate.db_ts",
+      "command": "migrate",
       "source": "packages/opencode/src/cli/cmd/db.ts"
     },
     {
-      "id": "models [provider]",
+      "stable_id": "command.models_provider.models_ts",
+      "command": "models [provider]",
       "source": "packages/opencode/src/cli/cmd/models.ts"
     },
     {
-      "id": "open",
+      "stable_id": "command.open.account_ts",
+      "command": "open",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "orgs",
+      "stable_id": "command.orgs.account_ts",
+      "command": "orgs",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "patch <hash>",
+      "stable_id": "command.patch_hash.snapshot_ts",
+      "command": "patch <hash>",
       "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
     },
     {
-      "id": "path",
+      "stable_id": "command.path.db_ts",
+      "command": "path",
       "source": "packages/opencode/src/cli/cmd/db.ts"
     },
     {
-      "id": "paths",
+      "stable_id": "command.paths.index_ts",
+      "command": "paths",
       "source": "packages/opencode/src/cli/cmd/debug/index.ts"
     },
     {
-      "id": "plugin <module>",
+      "stable_id": "command.plugin_module.plug_ts",
+      "command": "plugin <module>",
       "source": "packages/opencode/src/cli/cmd/plug.ts"
     },
     {
-      "id": "pr <number>",
+      "stable_id": "command.pr_number.pr_ts",
+      "command": "pr <number>",
       "source": "packages/opencode/src/cli/cmd/pr.ts"
     },
     {
-      "id": "providers",
+      "stable_id": "command.providers.providers_ts",
+      "command": "providers",
       "source": "packages/opencode/src/cli/cmd/providers.ts"
     },
     {
-      "id": "read <path>",
+      "stable_id": "command.read_path.file_ts",
+      "command": "read <path>",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "rg",
+      "stable_id": "command.rg.ripgrep_ts",
+      "command": "rg",
       "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
     },
     {
-      "id": "run",
+      "stable_id": "command.run.github_ts",
+      "command": "run",
       "source": "packages/opencode/src/cli/cmd/github.ts"
     },
     {
-      "id": "run [message..]",
+      "stable_id": "command.run_message.run_ts",
+      "command": "run [message..]",
       "source": "packages/opencode/src/cli/cmd/run.ts"
     },
     {
-      "id": "scrap",
+      "stable_id": "command.scrap.scrap_ts",
+      "command": "scrap",
       "source": "packages/opencode/src/cli/cmd/debug/scrap.ts"
     },
     {
-      "id": "search <pattern>",
+      "stable_id": "command.search_pattern.ripgrep_ts",
+      "command": "search <pattern>",
       "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
     },
     {
-      "id": "search <query>",
+      "stable_id": "command.search_query.file_ts",
+      "command": "search <query>",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "serve",
+      "stable_id": "command.serve.serve_ts",
+      "command": "serve",
       "source": "packages/opencode/src/cli/cmd/serve.ts"
     },
     {
-      "id": "session",
+      "stable_id": "command.session.session_ts",
+      "command": "session",
       "source": "packages/opencode/src/cli/cmd/session.ts"
     },
     {
-      "id": "skill",
+      "stable_id": "command.skill.skill_ts",
+      "command": "skill",
       "source": "packages/opencode/src/cli/cmd/debug/skill.ts"
     },
     {
-      "id": "snapshot",
+      "stable_id": "command.snapshot.snapshot_ts",
+      "command": "snapshot",
       "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
     },
     {
-      "id": "stats",
+      "stable_id": "command.stats.stats_ts",
+      "command": "stats",
       "source": "packages/opencode/src/cli/cmd/stats.ts"
     },
     {
-      "id": "status",
+      "stable_id": "command.status.file_ts",
+      "command": "status",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "switch",
+      "stable_id": "command.switch.account_ts",
+      "command": "switch",
       "source": "packages/opencode/src/cli/cmd/account.ts"
     },
     {
-      "id": "symbols <query>",
+      "stable_id": "command.symbols_query.lsp_ts",
+      "command": "symbols <query>",
       "source": "packages/opencode/src/cli/cmd/debug/lsp.ts"
     },
     {
-      "id": "track",
+      "stable_id": "command.track.snapshot_ts",
+      "command": "track",
       "source": "packages/opencode/src/cli/cmd/debug/snapshot.ts"
     },
     {
-      "id": "tree",
+      "stable_id": "command.tree.ripgrep_ts",
+      "command": "tree",
       "source": "packages/opencode/src/cli/cmd/debug/ripgrep.ts"
     },
     {
-      "id": "tree [dir]",
+      "stable_id": "command.tree_dir.file_ts",
+      "command": "tree [dir]",
       "source": "packages/opencode/src/cli/cmd/debug/file.ts"
     },
     {
-      "id": "uninstall",
+      "stable_id": "command.uninstall.uninstall_ts",
+      "command": "uninstall",
       "source": "packages/opencode/src/cli/cmd/uninstall.ts"
     },
     {
-      "id": "upgrade [target]",
+      "stable_id": "command.upgrade_target.upgrade_ts",
+      "command": "upgrade [target]",
       "source": "packages/opencode/src/cli/cmd/upgrade.ts"
     },
     {
-      "id": "wait",
+      "stable_id": "command.wait.index_ts",
+      "command": "wait",
       "source": "packages/opencode/src/cli/cmd/debug/index.ts"
     },
     {
-      "id": "web",
+      "stable_id": "command.web.web_ts",
+      "command": "web",
       "source": "packages/opencode/src/cli/cmd/web.ts"
     }
   ]
