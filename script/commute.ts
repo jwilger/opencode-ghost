@@ -1,12 +1,18 @@
 #!/usr/bin/env bun
 
-import { join } from "node:path"
+import { basename, join } from "node:path"
 
 const root = join(import.meta.dir, "..")
 const mode = process.argv.includes("--write") ? "write" : "check"
 
 const readJson = async <T>(path: string) => (await Bun.file(join(root, path)).json()) as T
 const readText = async (path: string) => Bun.file(join(root, path)).text()
+const list = async (glob: string) => {
+  const out: string[] = []
+  for await (const path of new Bun.Glob(glob).scan({ cwd: root })) out.push(path)
+  return out.sort()
+}
+const slug = (id: string) => id.split(".").at(-1) || id
 
 type Case = {
   case_id: string
@@ -89,9 +95,21 @@ const fold = (steps: string[]) =>
         }
         return { ...s, phase: "idle", permission: "approved", events: s.events + 1 }
       }
+      if (step === "permission_reject") {
+        if (s.phase !== "waiting" || s.permission !== "pending") {
+          throw new Error("permission_reject violates kernel preconditions")
+        }
+        return { ...s, phase: "idle", permission: "rejected", events: s.events + 1 }
+      }
       if (step === "session_idle") {
         if (s.phase !== "idle" || s.permission !== "approved") {
           throw new Error("session_idle requires approved idle state")
+        }
+        return { ...s, events: s.events + 1 }
+      }
+      if (step === "session_idle_rejected") {
+        if (s.phase !== "idle" || s.permission !== "rejected") {
+          throw new Error("session_idle_rejected requires rejected idle state")
         }
         return { ...s, events: s.events + 1 }
       }
@@ -105,12 +123,10 @@ const fold = (steps: string[]) =>
     },
   )
 
-const target = "evidence/traceability/commuting.runtime.permission_cycle.json"
-
-const render = async () => {
+const render = async (path: string) => {
   const kernel = await readJson<Kernel>("model/runtime/kernel.json")
-  const witness = await readJson<Witness>("tests/runtime/witness.json")
-  const runtimeCase = await readJson<Case>("contracts/runtime/cases/witness.permission_cycle.json")
+  const runtimeCase = await readJson<Case>(path)
+  const witness = await readJson<Witness>(`tests/runtime/${slug(runtimeCase.case_id)}.json`)
   const routes = await readJson<Routes>("contracts/runtime/inventory/routes.json")
   const quint = await readText("spec/runtime_witness.qnt")
   const lean = await readText("OpencodeGhost/RuntimeWitness.lean")
@@ -118,13 +134,22 @@ const render = async () => {
   const missingRoutes = runtimeCase.required_routes.filter(
     (id) => !routes.items.some((route) => route.operation_id === id),
   )
-  const missingTransitions = ["session_create", "permission_request", "permission_reply"].filter(
-    (id) => !kernel.transition_classes.includes(id),
-  )
+  const classes = runtimeCase.input.steps.flatMap((step) => {
+    if (step === "session_create") return ["session_create"]
+    if (step === "permission_request") return ["permission_request"]
+    if (step === "permission_reply") return ["permission_reply"]
+    if (step === "permission_reject") return ["permission_reject"]
+    return []
+  })
+  const missingTransitions = [...new Set(classes)].filter((id) => !kernel.transition_classes.includes(id))
   const formalMarkers = {
-    quint_permission_cycle: quint.includes("run permission_cycle"),
+    quint_cycle: quint.includes(runtimeCase.case_id.endsWith("permission_reject") ? "run permission_reject_cycle" : "run permission_cycle"),
     quint_approved_idle: quint.includes("approved_means_idle"),
+    quint_rejected_idle:
+      !runtimeCase.case_id.endsWith("permission_reject") || quint.includes("rejected_means_idle"),
     lean_witness_final: lean.includes("witness_replay_final"),
+    lean_witness_rejected:
+      !runtimeCase.case_id.endsWith("permission_reject") || lean.includes("witness_replay_rejected"),
     lean_coherent_replay: lean.includes("coherent_replay"),
   }
   const payload = {
@@ -154,18 +179,25 @@ const render = async () => {
         ? "pass"
         : "fail",
   }
-  return `${JSON.stringify(payload, null, 2)}\n`
+  return [slug(runtimeCase.case_id), `${JSON.stringify(payload, null, 2)}\n`] as const
 }
 
 const main = async () => {
-  const want = await render()
-  if (mode === "write") {
-    await Bun.write(join(root, target), want)
-    return
+  const cases = await list("contracts/runtime/cases/*.json")
+  let bad = false
+  for (const path of cases) {
+    const [name, want] = await render(path)
+    const target = `evidence/traceability/commuting.runtime.${name}.json`
+    if (mode === "write") {
+      await Bun.write(join(root, target), want)
+      continue
+    }
+    const got = await Bun.file(join(root, target)).text()
+    if (got === want) continue
+    console.error(`stale commuting evidence: ${target}`)
+    bad = true
   }
-  const got = await Bun.file(join(root, target)).text()
-  if (got === want) return
-  throw new Error(`stale commuting evidence: ${target}`)
+  if (bad) process.exit(1)
 }
 
 await main()

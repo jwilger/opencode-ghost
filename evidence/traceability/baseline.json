@@ -14,11 +14,47 @@
     "session.status"
   ],
   "required_tui_surfaces": [
-    "session",
-    "permission"
+    "tui.file.thread",
+    "tui.file.dialog_session_list"
   ],
   "required_tui_tests": [
     "tui.test.thread_test_ts",
     "tui.test.transcript_test_ts"
+  ],
+  "runtime_cases": [
+    {
+      "case_id": "witness.runtime.permission_cycle",
+      "profile_id": "core-runtime",
+      "required_routes": [
+        "session.create",
+        "session.prompt",
+        "permission.reply",
+        "session.status"
+      ]
+    },
+    {
+      "case_id": "witness.runtime.permission_reject",
+      "profile_id": "runtime-formal",
+      "required_routes": [
+        "session.create",
+        "session.prompt",
+        "permission.reply",
+        "session.status"
+      ]
+    }
+  ],
+  "tui_cases": [
+    {
+      "case_id": "witness.tui.permission_view",
+      "profile_id": "tui-certified",
+      "required_surfaces": [
+        "tui.file.thread",
+        "tui.file.dialog_session_list"
+      ],
+      "required_tests": [
+        "tui.test.thread_test_ts",
+        "tui.test.transcript_test_ts"
+      ]
+    }
   ]
 }

@@ -3,10 +3,10 @@
   "artifact_family": "test.runtime.witness",
   "status": "draft",
   "bootstrap": true,
-  "case_id": "witness.runtime.permission_cycle",
-  "profile_id": "core-runtime",
+  "case_id": "witness.runtime.permission_reject",
+  "profile_id": "runtime-formal",
   "world_id": "world.permission_session",
-  "goal": "Seven-layer witness slice covering session creation through permission resolution.",
+  "goal": "Runtime witness slice covering permission rejection back to rejected idle state.",
   "required_routes": [
     "session.create",
     "session.prompt",
@@ -16,9 +16,8 @@
   "steps": [
     "session_create",
     "session_busy",
-    "assistant_output",
     "permission_request",
-    "permission_reply",
-    "session_idle"
+    "permission_reject",
+    "session_idle_rejected"
   ]
 }

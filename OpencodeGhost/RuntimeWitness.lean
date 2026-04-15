@@ -62,7 +62,8 @@ def replay (xs : List Event) : State :=
 
 def coherent (s : State) : Prop :=
   (s.permission = .pending ↔ s.phase = .waiting) ∧
-  (s.permission = .approved → s.phase = .idle)
+  (s.permission = .approved → s.phase = .idle) ∧
+  (s.permission = .rejected → s.phase = .idle)
 
 theorem coherent_init : coherent init := by
   simp [coherent, init]
@@ -88,6 +89,11 @@ theorem coherent_replay (xs : List Event) : coherent (replay xs) := by
 theorem witness_replay_final :
     replay [.create, .start, .ask, .approve] =
       { created := true, phase := .idle, permission := .approved } := by
+  simp [replay, apply, init]
+
+theorem witness_replay_rejected :
+    replay [.create, .start, .ask, .reject] =
+      { created := true, phase := .idle, permission := .rejected } := by
   simp [replay, apply, init]
 
 theorem witness_pending_waiting :

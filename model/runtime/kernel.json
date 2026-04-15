@@ -18,6 +18,7 @@
     "event_apply",
     "permission_request",
     "permission_reply",
+    "permission_reject",
     "replay_apply",
     "worktree_create",
     "worktree_remove"

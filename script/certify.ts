@@ -4,18 +4,24 @@ import { join } from "node:path"
 
 const root = join(import.meta.dir, "..")
 const mode = process.argv.includes("--write") ? "write" : "check"
-const target = "evidence/traceability/opencode_source.runtime_formal.permission_cycle.jsonl"
 
 const readJson = async <T>(path: string) => (await Bun.file(join(root, path)).json()) as T
+const list = async (glob: string) => {
+  const out: string[] = []
+  for await (const path of new Bun.Glob(glob).scan({ cwd: root })) out.push(path)
+  return out.sort()
+}
+const slug = (id: string) => id.split(".").at(-1) || id
+const tag = (id: string) => id.replace(/[^a-zA-Z0-9]+/g, "_")
 
 type Baseline = {
   source_commit: string
-  required_runtime_routes: string[]
 }
 
 type Case = {
   case_id: string
   profile_id: string
+  required_routes: string[]
 }
 
 type Commute = {
@@ -24,10 +30,11 @@ type Commute = {
   status: string
 }
 
-const render = async () => {
+const render = async (path: string) => {
   const baseline = await readJson<Baseline>("evidence/traceability/baseline.json")
-  const runtimeCase = await readJson<Case>("contracts/runtime/cases/witness.permission_cycle.json")
-  const commuting = await readJson<Commute>("evidence/traceability/commuting.runtime.permission_cycle.json")
+  const runtimeCase = await readJson<Case>(path)
+  const name = slug(runtimeCase.case_id)
+  const commuting = await readJson<Commute>(`evidence/traceability/commuting.runtime.${name}.json`)
   const rows = [
     {
       kind: "hello",
@@ -56,8 +63,8 @@ const render = async () => {
       profile_id: runtimeCase.profile_id,
       schema_family: "contract.runtime.case",
       payload: {
-        path: "contracts/runtime/cases/witness.permission_cycle.json",
-        required_runtime_routes: baseline.required_runtime_routes,
+        path,
+        required_runtime_routes: runtimeCase.required_routes,
       },
     },
     {
@@ -76,7 +83,7 @@ const render = async () => {
       kind: "verdict",
       case_id: runtimeCase.case_id,
       status: commuting.status,
-      evidence: "evidence/traceability/commuting.runtime.permission_cycle.json",
+      evidence: `evidence/traceability/commuting.runtime.${name}.json`,
     },
   ]
   const seq = rows
@@ -86,18 +93,24 @@ const render = async () => {
   if (rows[0].kind !== "hello") throw new Error("conformance transcript must start with hello")
   if (rows.at(-1)?.kind !== "verdict") throw new Error("conformance transcript must end with verdict")
   if (rows.at(-1)?.status !== "pass") throw new Error("baseline certification did not pass")
-  return `${rows.map((row) => JSON.stringify(row)).join("\n")}\n`
+  return [`evidence/traceability/opencode_source.${tag(runtimeCase.profile_id)}.${name}.jsonl`, `${rows.map((row) => JSON.stringify(row)).join("\n")}\n`] as const
 }
 
 const main = async () => {
-  const want = await render()
-  if (mode === "write") {
-    await Bun.write(join(root, target), want)
-    return
+  const cases = await list("contracts/runtime/cases/*.json")
+  let bad = false
+  for (const path of cases) {
+    const [target, want] = await render(path)
+    if (mode === "write") {
+      await Bun.write(join(root, target), want)
+      continue
+    }
+    const got = await Bun.file(join(root, target)).text()
+    if (got === want) continue
+    console.error(`stale baseline certification transcript: ${target}`)
+    bad = true
   }
-  const got = await Bun.file(join(root, target)).text()
-  if (got === want) return
-  throw new Error(`stale baseline certification transcript: ${target}`)
+  if (bad) process.exit(1)
 }
 
 await main()

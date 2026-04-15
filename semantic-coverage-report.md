@@ -8,12 +8,12 @@
 | --- | --- |
 | surfaces | 5 |
 | profiles | 6 |
-| claims | 18 |
-| commuting_claims | 2 |
-| source_certified_claims | 4 |
-| requires_edges | 11 |
-| checked_by_edges | 12 |
-| certifies_edges | 5 |
+| claims | 22 |
+| commuting_claims | 3 |
+| source_certified_claims | 5 |
+| requires_edges | 13 |
+| checked_by_edges | 14 |
+| certifies_edges | 6 |
 
 ## Surface Coverage
 
@@ -23,7 +23,7 @@
 | `surface.tui` | 2 | 1 |
 | `surface.integrations` | 1 | 0 |
 | `surface.security` | 1 | 0 |
-| `surface.kernel` | 1 | 4 |
+| `surface.kernel` | 1 | 7 |
 
 ## Claim Coverage
 
@@ -34,9 +34,13 @@
 | `claim.generated_governance` | `operational` | 0 | `provisional` |
 | `claim.runtime.pending_waiting` | `operational` | 0 | `provisional` |
 | `claim.runtime.approved_idle` | `operational` | 0 | `provisional` |
+| `claim.runtime.rejected_idle` | `operational` | 0 | `provisional` |
 | `claim.runtime.witness_final` | `operational` | 0 | `provisional` |
+| `claim.runtime.reject_witness_final` | `operational` | 0 | `provisional` |
 | `claim.runtime.commuting.permission_cycle` | `operational` | 1 | `provisional` |
 | `claim.runtime.source_certified.permission_cycle` | `operational` | 1 | `provisional` |
+| `claim.runtime.commuting.permission_reject` | `operational` | 1 | `provisional` |
+| `claim.runtime.source_certified.permission_reject` | `operational` | 1 | `provisional` |
 | `claim.tui.commuting.permission_view` | `operational` | 1 | `provisional` |
 | `claim.tui.source_certified.permission_view` | `operational` | 1 | `provisional` |
 | `claim.normalization.runtime_laws` | `operational` | 1 | `provisional` |

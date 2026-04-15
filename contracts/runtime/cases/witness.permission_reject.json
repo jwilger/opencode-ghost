@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.runtime.case",
+  "status": "provisional",
+  "case_id": "witness.runtime.permission_reject",
+  "profile_id": "runtime-formal",
+  "world_id": "world.permission_session",
+  "transport": "replay",
+  "input": {
+    "kind": "event_replay",
+    "steps": [
+      "session_create",
+      "session_busy",
+      "permission_request",
+      "permission_reject",
+      "session_idle_rejected"
+    ]
+  },
+  "expect": {
+    "kind": "state_projection",
+    "surface": "surface.kernel",
+    "observation_space": {
+      "projection": "permission_reject_projection",
+      "equivalence": "exact_json",
+      "normalization": "identity"
+    },
+    "payload": {
+      "created": true,
+      "phase": "idle",
+      "permission": "rejected",
+      "events": 5
+    }
+  },
+  "required_routes": [
+    "session.create",
+    "session.prompt",
+    "permission.reply",
+    "session.status"
+  ]
+}

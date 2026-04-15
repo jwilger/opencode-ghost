@@ -87,10 +87,14 @@ module runtime_witness {
   val approved_means_idle =
     permission == Approved implies phase == Idle
 
+  val rejected_means_idle =
+    permission == Rejected implies phase == Idle
+
   val inv = and {
     pending_means_waiting,
     waiting_means_pending,
     approved_means_idle,
+    rejected_means_idle,
   }
 
   run permission_cycle = {
@@ -105,6 +109,23 @@ module runtime_witness {
       })
       .then(all {
         assert(permission == Approved),
+        assert(phase == Idle),
+        init
+      })
+  }
+
+  run permission_reject_cycle = {
+    init
+      .then(create_session)
+      .then(start_run)
+      .then(request_permission)
+      .then(all {
+        assert(permission == Pending),
+        assert(phase == WaitingPermission),
+        reject_permission
+      })
+      .then(all {
+        assert(permission == Rejected),
         assert(phase == Idle),
         init
       })
