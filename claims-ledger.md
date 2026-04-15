@@ -7,6 +7,7 @@
 | `claim.source_first_certification` | source-first certification | `provisional` | `normative` | No promoted artifact becomes normative until opencode itself satisfies the relevant profile under the conformance kit. |
 | `claim.stable_ids` | stable IDs are mandatory | `provisional` | `normative` | Every materially relevant entity receives a permanent graph ID that is never recycled. |
 | `claim.generated_governance` | governance views are generated | `provisional` | `normative` | Ledgers, matrices, and reports are generated from the graph and are not independently authoritative. |
+| `claim.witness_slice_gate` | witness slice is the decisive epistemic gate | `provisional` | `normative` | If the seven-layer witness slice fails to close, the semantic basis must be simplified rather than widened with more governance. |
 | `claim.runtime.pending_waiting` | pending permission implies waiting phase | `provisional` | `normative` | The runtime witness preserves the invariant that pending permission state and waiting permission phase coincide. |
 | `claim.runtime.approved_idle` | approved permission implies idle phase | `provisional` | `normative` | The runtime witness preserves the invariant that approved permission replies return the session to idle. |
 | `claim.runtime.rejected_idle` | rejected permission implies idle phase | `provisional` | `normative` | The runtime witness preserves the invariant that rejected permission replies return the session to idle. |

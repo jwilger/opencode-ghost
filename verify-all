@@ -14,7 +14,7 @@ need() {
   exit 1
 }
 
-echo "==> bootstrap toolchain"
+echo "==> toolchain"
 need git
 need node
 need bun
@@ -29,7 +29,7 @@ lean --version | sed -n '1p'
 lake --version | sed -n '1p'
 quint --version
 
-echo "==> required bootstrap files"
+echo "==> required repository files"
 for file in flake.nix .gitignore README.md VERIFY.md verify-all lean-toolchain lakefile.toml; do
   if [[ ! -f "$file" ]]; then
     echo "missing required file: $file" >&2
@@ -49,4 +49,4 @@ else
   echo "no hooks found (expected directory: script/verify)"
 fi
 
-echo "==> bootstrap verification complete"
+echo "==> verification complete"

@@ -16,7 +16,7 @@
 | `artifact.script.verify_all` | `verify-all` | `environment,harness` | Pinned verification entrypoint invoking all phase hooks in deterministic order. |
 | `artifact.script.normalize` | `script/normalize.ts` | `normalization,harness` | Validates determinism, idempotence, monotonic erasure, and semantic preservation for runtime and TUI normalizers. |
 | `artifact.script.determinism` | `script/determinism.ts` | `environment,harness` | Checks that generated inventories, reports, evidence, and certification transcripts are byte-stable across regeneration. |
-| `artifact.script.freeze` | `script/freeze.ts` | `abstraction,harness` | Generates the bootstrap semantic-freeze report from graph coverage and certification state. |
+| `artifact.script.freeze` | `script/freeze.ts` | `abstraction,harness` | Generates the semantic-freeze report from graph coverage and certification state. |
 | `artifact.script.profile_certify` | `script/profile-certify.ts` | `harness` | Aggregates case-level source-first certification transcripts into profile-level certification summaries. |
 | `artifact.script.consumer_certify` | `script/consumer-certify.ts` | `harness,environment` | Aggregates evaluated Rust and Go consumer executions into deterministic certification summaries. |
 

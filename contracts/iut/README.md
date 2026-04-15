@@ -1,15 +1,22 @@
 # Implementation Under Test Contracts
 
-These files define the bootstrap evaluator boundary for external implementations.
+These files define the evaluator boundary for external implementations.
 
 - `runtime.json` describes how a runtime implementation starts, receives cases, emits observations, and reports verdict-relevant failures.
 - `tui.json` describes how a TUI implementation starts in deterministic mode, receives interaction events, and emits frame and layout checkpoints.
 
-These contracts are intentionally bootstrap-quality:
+These contracts are already used by:
+
+- source-first certification of the `opencode` implementation
+- the Rust reference consumer
+- the Rust source-isolated consumer
+- the Go sanity consumer
+
+Design constraints:
 
 - language agnostic
 - Rust-friendly
-- strict about discriminants, ordering, and nullability
-- incomplete where the upstream extraction has not yet frozen exact payloads
+- explicit discriminants, ordering, and nullability
+- shared evaluator topology across runtime and TUI certification
 
-They are not final protocol commitments. Later phases should tighten field vocabularies, observation shapes, and profile-specific obligations without changing the overall evaluator topology.
+These contracts are the concrete specialization of the conformance-kit protocol. They may still become more specific, but they are already normative enough to carry promoted witness slices and profile certification.

@@ -49,9 +49,24 @@ const checkGraph = async () => {
     ids.add(row.id)
     if (row.kind === "node") nodes.add(row.id)
   }
+  for (const id of [
+    "artifact.doc.governance",
+    "artifact.policy.plan_freeze",
+    "artifact.policy.normative_minimality",
+    "artifact.policy.foundational_scope",
+    "artifact.policy.peripheral_scope",
+    "role.semantic_editor",
+    "claim.witness_slice_gate",
+  ]) {
+    if (!nodes.has(id)) throw new Error(`missing governance node: ${id}`)
+  }
   for (const row of rows) {
     if (row.kind === "node" && typeof row.path === "string") {
       if (!existsSync(join(root, row.path))) throw new Error(`missing graph path: ${row.id} -> ${row.path}`)
+    }
+    if (row.kind === "node" && row.class === "normative" && ["artifact", "claim"].includes(row.type)) {
+      const text = row.attrs?.minimality
+      if (typeof text !== "string" || !text.trim()) throw new Error(`missing minimality note: ${row.id}`)
     }
     if (row.kind !== "edge") continue
     if (!ids.has(row.from)) throw new Error(`missing edge source: ${row.id} -> ${row.from}`)

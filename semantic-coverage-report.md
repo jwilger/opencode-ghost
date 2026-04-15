@@ -8,7 +8,7 @@
 | --- | --- |
 | surfaces | 5 |
 | profiles | 6 |
-| claims | 45 |
+| claims | 46 |
 | commuting_claims | 12 |
 | source_certified_claims | 16 |
 | requires_edges | 35 |
@@ -33,6 +33,7 @@
 | `claim.source_first_certification` | `operational` | 0 | `provisional` |
 | `claim.stable_ids` | `operational` | 0 | `provisional` |
 | `claim.generated_governance` | `operational` | 0 | `provisional` |
+| `claim.witness_slice_gate` | `operational` | 0 | `provisional` |
 | `claim.runtime.pending_waiting` | `operational` | 0 | `provisional` |
 | `claim.runtime.approved_idle` | `operational` | 0 | `provisional` |
 | `claim.runtime.rejected_idle` | `operational` | 0 | `provisional` |
