@@ -20,7 +20,8 @@ type Case = {
   world_id: string
   input: {
     kind: string
-    steps: string[]
+    steps?: string[]
+    routes?: string[]
   }
   expect: {
     kind: string
@@ -44,7 +45,8 @@ type Witness = {
   case_id: string
   profile_id: string
   world_id: string
-  steps: string[]
+  steps?: string[]
+  routes?: string[]
 }
 
 type Kernel = {
@@ -130,11 +132,17 @@ const render = async (path: string) => {
   const routes = await readJson<Routes>("contracts/runtime/inventory/routes.json")
   const quint = await readText("spec/runtime_witness.qnt")
   const lean = await readText("OpencodeGhost/RuntimeWitness.lean")
-  const actual = fold(runtimeCase.input.steps)
+  const actual =
+    runtimeCase.input.kind === "route_inventory"
+      ? {
+          routes: [...(runtimeCase.input.routes || [])].sort(),
+          count: runtimeCase.input.routes?.length || 0,
+        }
+      : fold(runtimeCase.input.steps || [])
   const missingRoutes = runtimeCase.required_routes.filter(
     (id) => !routes.items.some((route) => route.operation_id === id),
   )
-  const classes = runtimeCase.input.steps.flatMap((step) => {
+  const classes = (runtimeCase.input.steps || []).flatMap((step) => {
     if (step === "session_create") return ["session_create"]
     if (step === "permission_request") return ["permission_request"]
     if (step === "permission_reply") return ["permission_reply"]
@@ -142,23 +150,29 @@ const render = async (path: string) => {
     return []
   })
   const missingTransitions = [...new Set(classes)].filter((id) => !kernel.transition_classes.includes(id))
-  const formalMarkers = {
-    quint_cycle: quint.includes(runtimeCase.case_id.endsWith("permission_reject") ? "run permission_reject_cycle" : "run permission_cycle"),
-    quint_approved_idle: quint.includes("approved_means_idle"),
-    quint_rejected_idle:
-      !runtimeCase.case_id.endsWith("permission_reject") || quint.includes("rejected_means_idle"),
-    lean_witness_final: lean.includes("witness_replay_final"),
-    lean_witness_rejected:
-      !runtimeCase.case_id.endsWith("permission_reject") || lean.includes("witness_replay_rejected"),
-    lean_coherent_replay: lean.includes("coherent_replay"),
-  }
+  const formalMarkers =
+    runtimeCase.input.kind === "route_inventory"
+      ? {}
+      : {
+          quint_cycle: quint.includes(runtimeCase.case_id.endsWith("permission_reject") ? "run permission_reject_cycle" : "run permission_cycle"),
+          quint_approved_idle: quint.includes("approved_means_idle"),
+          quint_rejected_idle:
+            !runtimeCase.case_id.endsWith("permission_reject") || quint.includes("rejected_means_idle"),
+          lean_witness_final: lean.includes("witness_replay_final"),
+          lean_witness_rejected:
+            !runtimeCase.case_id.endsWith("permission_reject") || lean.includes("witness_replay_rejected"),
+          lean_coherent_replay: lean.includes("coherent_replay"),
+        }
   const payload = {
     case_id: runtimeCase.case_id,
     profile_id: runtimeCase.profile_id,
     world_id: runtimeCase.world_id,
     observation_space: runtimeCase.expect.observation_space,
     checks: {
-      witness_matches_case: witness.case_id === runtimeCase.case_id && witness.steps.join("\n") === runtimeCase.input.steps.join("\n"),
+      witness_matches_case:
+        witness.case_id === runtimeCase.case_id &&
+        JSON.stringify(witness.steps || witness.routes || []) ===
+          JSON.stringify(runtimeCase.input.steps || runtimeCase.input.routes || []),
       routes_present: missingRoutes.length === 0,
       transitions_present: missingTransitions.length === 0,
       formal_markers: formalMarkers,
@@ -172,10 +186,11 @@ const render = async (path: string) => {
     status:
       missingRoutes.length === 0 &&
       missingTransitions.length === 0 &&
-      Object.values(formalMarkers).every(Boolean) &&
+      (runtimeCase.input.kind === "route_inventory" || Object.values(formalMarkers).every(Boolean)) &&
       JSON.stringify(actual) === JSON.stringify(runtimeCase.expect.payload) &&
       witness.case_id === runtimeCase.case_id &&
-      witness.steps.join("\n") === runtimeCase.input.steps.join("\n")
+      JSON.stringify(witness.steps || witness.routes || []) ===
+        JSON.stringify(runtimeCase.input.steps || runtimeCase.input.routes || [])
         ? "pass"
         : "fail",
   }

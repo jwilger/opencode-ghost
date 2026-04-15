@@ -11,7 +11,12 @@
     "session.create",
     "session.prompt",
     "permission.reply",
-    "session.status"
+    "session.status",
+    "experimental.workspace.create",
+    "experimental.workspace.list",
+    "experimental.workspace.remove",
+    "experimental.workspace.sessionRestore",
+    "experimental.workspace.status"
   ],
   "required_tui_surfaces": [
     "tui.file.thread",
@@ -45,6 +50,17 @@
         "session.prompt",
         "permission.reply",
         "session.status"
+      ]
+    },
+    {
+      "case_id": "witness.runtime.workspace_lifecycle",
+      "profile_id": "core-runtime",
+      "required_routes": [
+        "experimental.workspace.create",
+        "experimental.workspace.list",
+        "experimental.workspace.remove",
+        "experimental.workspace.sessionRestore",
+        "experimental.workspace.status"
       ]
     }
   ],

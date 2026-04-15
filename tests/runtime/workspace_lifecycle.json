@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "test.runtime.witness",
+  "status": "draft",
+  "bootstrap": true,
+  "case_id": "witness.runtime.workspace_lifecycle",
+  "profile_id": "core-runtime",
+  "world_id": "world.minimal_repo",
+  "goal": "Core-runtime witness over the experimental workspace lifecycle route set.",
+  "required_routes": [
+    "experimental.workspace.create",
+    "experimental.workspace.list",
+    "experimental.workspace.remove",
+    "experimental.workspace.sessionRestore",
+    "experimental.workspace.status"
+  ],
+  "routes": [
+    "experimental.workspace.create",
+    "experimental.workspace.list",
+    "experimental.workspace.remove",
+    "experimental.workspace.sessionRestore",
+    "experimental.workspace.status"
+  ]
+}

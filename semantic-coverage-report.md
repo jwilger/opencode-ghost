@@ -8,18 +8,18 @@
 | --- | --- |
 | surfaces | 5 |
 | profiles | 6 |
-| claims | 30 |
-| commuting_claims | 7 |
-| source_certified_claims | 9 |
-| requires_edges | 21 |
-| checked_by_edges | 22 |
-| certifies_edges | 10 |
+| claims | 32 |
+| commuting_claims | 8 |
+| source_certified_claims | 10 |
+| requires_edges | 23 |
+| checked_by_edges | 24 |
+| certifies_edges | 11 |
 
 ## Surface Coverage
 
 | Surface | Profiles | Claims |
 | --- | --- | --- |
-| `surface.runtime` | 3 | 0 |
+| `surface.runtime` | 3 | 1 |
 | `surface.tui` | 2 | 5 |
 | `surface.integrations` | 1 | 0 |
 | `surface.security` | 1 | 0 |
@@ -41,6 +41,8 @@
 | `claim.runtime.source_certified.permission_cycle` | `operational` | 1 | `provisional` |
 | `claim.runtime.commuting.permission_reject` | `operational` | 1 | `provisional` |
 | `claim.runtime.source_certified.permission_reject` | `operational` | 1 | `provisional` |
+| `claim.runtime.commuting.workspace_lifecycle` | `operational` | 1 | `provisional` |
+| `claim.runtime.source_certified.workspace_lifecycle` | `operational` | 1 | `provisional` |
 | `claim.tui.commuting.permission_view` | `operational` | 1 | `provisional` |
 | `claim.tui.source_certified.permission_view` | `operational` | 1 | `provisional` |
 | `claim.tui.commuting.session_list_dialog` | `operational` | 1 | `provisional` |

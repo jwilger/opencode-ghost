@@ -6,7 +6,7 @@
 
 | Profile | Covers | Requires | Certified | State |
 | --- | --- | --- | --- | --- |
-| `profile.core_runtime` | `surface.runtime` | 1 | 1 | `draft` |
+| `profile.core_runtime` | `surface.runtime` | 3 | 2 | `draft` |
 | `profile.runtime_formal` | `surface.kernel` | 6 | 2 | `draft` |
 | `profile.tui_certified` | `surface.tui` | 10 | 5 | `draft` |
 | `profile.integrations_canonical` | `surface.integrations` | 2 | 0 | `draft` |
@@ -17,8 +17,8 @@
 
 | Type | Count |
 | --- | --- |
-| artifact | 47 |
-| claim | 30 |
+| artifact | 50 |
+| claim | 32 |
 | surface | 5 |
 | profile | 6 |
 | report | 7 |

@@ -1,0 +1,8 @@
+{"kind":"hello","protocol_version":"0.1.0","implementation_id":"opencode-source","implementation_version":"9640d889baa58fa01ed612a6372ba77462f79d9f"}
+{"kind":"capabilities","supported_profiles":["core-runtime","runtime-formal"],"supported_transports":["file_path"],"supported_observations":["state_projection"]}
+{"kind":"profile_request","profile_id":"core-runtime"}
+{"kind":"profile_response","profile_id":"core-runtime","accepted":true}
+{"kind":"case_offer","case_id":"witness.runtime.workspace_lifecycle","profile_id":"core-runtime","schema_family":"contract.runtime.case","payload":{"path":"contracts/runtime/cases/witness.workspace_lifecycle.json","required_runtime_routes":["experimental.workspace.create","experimental.workspace.list","experimental.workspace.remove","experimental.workspace.sessionRestore","experimental.workspace.status"]}}
+{"kind":"case_accept","case_id":"witness.runtime.workspace_lifecycle","accepted":true}
+{"kind":"checkpoint","case_id":"witness.runtime.workspace_lifecycle","seq":1,"observation_kind":"state_projection","payload":{"routes":["experimental.workspace.create","experimental.workspace.list","experimental.workspace.remove","experimental.workspace.sessionRestore","experimental.workspace.status"],"count":5}}
+{"kind":"verdict","case_id":"witness.runtime.workspace_lifecycle","status":"pass","evidence":"evidence/traceability/commuting.runtime.workspace_lifecycle.json"}

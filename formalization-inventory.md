@@ -15,6 +15,8 @@
 | `claim.runtime.source_certified.permission_cycle` |  |  | `artifact.evidence.opencode_runtime_formal_transcript` | `provisional` |
 | `claim.runtime.commuting.permission_reject` |  | `surface.kernel` | `artifact.evidence.runtime_permission_reject_commuting` | `provisional` |
 | `claim.runtime.source_certified.permission_reject` |  |  | `artifact.evidence.opencode_runtime_formal_reject_transcript` | `provisional` |
+| `claim.runtime.commuting.workspace_lifecycle` |  | `surface.runtime` | `artifact.evidence.runtime_workspace_lifecycle_commuting` | `provisional` |
+| `claim.runtime.source_certified.workspace_lifecycle` |  |  | `artifact.evidence.opencode_core_runtime_workspace_lifecycle_transcript` | `provisional` |
 | `claim.normalization.runtime_laws` |  |  | `artifact.script.normalize` | `provisional` |
 | `claim.normalization.tui_laws` |  |  | `artifact.script.normalize` | `provisional` |
 

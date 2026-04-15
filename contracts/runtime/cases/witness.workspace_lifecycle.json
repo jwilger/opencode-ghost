@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "contract.runtime.case",
+  "status": "provisional",
+  "case_id": "witness.runtime.workspace_lifecycle",
+  "profile_id": "core-runtime",
+  "world_id": "world.minimal_repo",
+  "transport": "inventory",
+  "input": {
+    "kind": "route_inventory",
+    "routes": [
+      "experimental.workspace.create",
+      "experimental.workspace.list",
+      "experimental.workspace.remove",
+      "experimental.workspace.sessionRestore",
+      "experimental.workspace.status"
+    ]
+  },
+  "expect": {
+    "kind": "route_projection",
+    "surface": "surface.runtime",
+    "observation_space": {
+      "projection": "workspace_lifecycle_projection",
+      "equivalence": "exact_json",
+      "normalization": "identity"
+    },
+    "payload": {
+      "routes": [
+        "experimental.workspace.create",
+        "experimental.workspace.list",
+        "experimental.workspace.remove",
+        "experimental.workspace.sessionRestore",
+        "experimental.workspace.status"
+      ],
+      "count": 5
+    }
+  },
+  "required_routes": [
+    "experimental.workspace.create",
+    "experimental.workspace.list",
+    "experimental.workspace.remove",
+    "experimental.workspace.sessionRestore",
+    "experimental.workspace.status"
+  ]
+}
