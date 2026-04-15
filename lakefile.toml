@@ -1,3 +1,6 @@
 name = "opencode_ghost"
 version = "0.1.0"
-defaultTargets = []
+defaultTargets = ["OpencodeGhost"]
+
+[[lean_lib]]
+name = "OpencodeGhost"

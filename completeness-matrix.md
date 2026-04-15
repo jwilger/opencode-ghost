@@ -21,11 +21,16 @@
 | `surface.integrations` | `surface` | `normative` | `provisional` |  |
 | `surface.security` | `surface` | `normative` | `provisional` |  |
 | `surface.kernel` | `surface` | `normative` | `draft` |  |
+| `artifact.spec.runtime_witness` | `artifact` | `normative` | `provisional` | `spec/runtime_witness.qnt` |
+| `artifact.lean.runtime_witness` | `artifact` | `normative` | `provisional` | `OpencodeGhost/RuntimeWitness.lean` |
 | `world.minimal_repo` | `world` | `normative` | `draft` |  |
 | `world.permission_session` | `world` | `normative` | `draft` |  |
 | `claim.source_first_certification` | `claim` | `normative` | `provisional` |  |
 | `claim.stable_ids` | `claim` | `normative` | `provisional` |  |
 | `claim.generated_governance` | `claim` | `normative` | `provisional` |  |
+| `claim.runtime.pending_waiting` | `claim` | `normative` | `provisional` |  |
+| `claim.runtime.approved_idle` | `claim` | `normative` | `provisional` |  |
+| `claim.runtime.witness_final` | `claim` | `normative` | `provisional` |  |
 | `report.claims_ledger` | `report` | `generated` | `draft` | `claims-ledger.md` |
 | `report.formalization_inventory` | `report` | `generated` | `draft` | `formalization-inventory.md` |
 | `report.completeness_matrix` | `report` | `generated` | `draft` | `completeness-matrix.md` |

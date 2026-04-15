@@ -2,6 +2,15 @@
 
 > Generated from `graph/contract-graph.jsonl`. Do not edit directly.
 
-| Profile | Surface | State | Note |
-| --- | --- | --- | --- |
-| `profile.runtime_formal` | `surface.kernel` | `draft` | Minimal kernel containing session state, event application, permission state, replay semantics, and project/worktree identity. |
+| Entity | Relation | Target | State | Note |
+| --- | --- | --- | --- | --- |
+| `repo.opencode_ghost` | `contains` | `surface.kernel` | `provisional` | Canonical ghost-spec repository for source-isolated reimplementation. |
+| `profile.runtime_formal` | `covers` | `surface.kernel` | `draft` | Formal kernel obligations over runtime semantics, including Quint and Lean artifacts. |
+| `profile.runtime_formal` | `requires` | `artifact.spec.runtime_witness` | `draft` | Formal kernel obligations over runtime semantics, including Quint and Lean artifacts. |
+| `profile.runtime_formal` | `requires` | `artifact.lean.runtime_witness` | `draft` | Formal kernel obligations over runtime semantics, including Quint and Lean artifacts. |
+| `claim.runtime.pending_waiting` | `proved_by` | `artifact.lean.runtime_witness` | `provisional` | The runtime witness preserves the invariant that pending permission state and waiting permission phase coincide. |
+| `claim.runtime.approved_idle` | `proved_by` | `artifact.lean.runtime_witness` | `provisional` | The runtime witness preserves the invariant that approved permission replies return the session to idle. |
+| `claim.runtime.witness_final` | `specified_by` | `artifact.spec.runtime_witness` | `provisional` | The canonical create -> busy -> ask -> approve witness converges on the approved idle kernel state. |
+| `claim.runtime.witness_final` | `refines` | `surface.kernel` | `provisional` | The canonical create -> busy -> ask -> approve witness converges on the approved idle kernel state. |
+| `claim.runtime.pending_waiting` | `refines` | `surface.kernel` | `provisional` | The runtime witness preserves the invariant that pending permission state and waiting permission phase coincide. |
+| `claim.runtime.approved_idle` | `refines` | `surface.kernel` | `provisional` | The runtime witness preserves the invariant that approved permission replies return the session to idle. |

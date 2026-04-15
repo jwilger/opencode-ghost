@@ -1,5 +1,6 @@
 #!/usr/bin/env bun
 
+import { existsSync } from "node:fs"
 import { join, relative } from "node:path"
 
 const root = join(import.meta.dir, "..")
@@ -49,6 +50,9 @@ const checkGraph = async () => {
     if (row.kind === "node") nodes.add(row.id)
   }
   for (const row of rows) {
+    if (row.kind === "node" && typeof row.path === "string") {
+      if (!existsSync(join(root, row.path))) throw new Error(`missing graph path: ${row.id} -> ${row.path}`)
+    }
     if (row.kind !== "edge") continue
     if (!ids.has(row.from)) throw new Error(`missing edge source: ${row.id} -> ${row.from}`)
     if (!ids.has(row.to)) throw new Error(`missing edge target: ${row.id} -> ${row.to}`)

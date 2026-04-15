@@ -50,20 +50,27 @@ const renderClaims = (rows: Row[]) =>
   ])
 
 const renderFormal = (rows: Row[]) => {
-  const edges = rows.filter((x) => x.kind === "edge" && x.type === "covers")
+  const edges = rows.filter((x) => x.kind === "edge")
   const nodes = new Map(rows.filter((x) => x.kind === "node").map((x) => [x.id, x]))
   return md("formalization-inventory.md", [
     `> ${quote}`,
     "",
     table(
-      ["Profile", "Surface", "State", "Note"],
+      ["Entity", "Relation", "Target", "State", "Note"],
       edges
-        .filter((x) => x.from === "profile.runtime_formal" || x.to === "surface.kernel")
+        .filter(
+          (x) =>
+            x.from === "profile.runtime_formal" ||
+            x.to === "surface.kernel" ||
+            x.type === "proved_by" ||
+            x.type === "specified_by",
+        )
         .map((x) => [
           `\`${x.from}\``,
+          `\`${x.type}\``,
           `\`${x.to}\``,
-          `\`${nodes.get(x.from || "")?.state || x.state || "draft"}\``,
-          nodes.get(x.to || "")?.note || x.note || "",
+          `\`${nodes.get(x.from || "")?.state || nodes.get(x.to || "")?.state || x.state || "draft"}\``,
+          nodes.get(x.from || "")?.note || nodes.get(x.to || "")?.note || x.note || "",
         ]),
     ),
   ])

@@ -9,3 +9,6 @@
 - `claim.source_first_certification`: No promoted artifact becomes normative until opencode itself satisfies the relevant profile under the conformance kit.
 - `claim.stable_ids`: Every materially relevant entity receives a permanent graph ID that is never recycled.
 - `claim.generated_governance`: Ledgers, matrices, and reports are generated from the graph and are not independently authoritative.
+- `claim.runtime.pending_waiting`: The runtime witness preserves the invariant that pending permission state and waiting permission phase coincide.
+- `claim.runtime.approved_idle`: The runtime witness preserves the invariant that approved permission replies return the session to idle.
+- `claim.runtime.witness_final`: The canonical create -> busy -> ask -> approve witness converges on the approved idle kernel state.
