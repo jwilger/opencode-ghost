@@ -91,6 +91,10 @@ const render = async () => {
 
 const main = async () => {
   const want = await render()
+  const summary = JSON.parse(want).summary as { heuristic_only: number }
+  if (summary.heuristic_only > 0) {
+    throw new Error(`unclassified tracked files remain: ${summary.heuristic_only}`)
+  }
   if (mode === "write") {
     await Bun.write(join(root, target), want)
     return

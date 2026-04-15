@@ -18,6 +18,11 @@
 | `artifact.script.normalize` | `script/normalize.ts` | `normalization,harness` | Validates determinism, idempotence, monotonic erasure, and semantic preservation for runtime and TUI normalizers. |
 | `artifact.script.determinism` | `script/determinism.ts` | `environment,harness` | Checks that generated inventories, reports, evidence, and certification transcripts are byte-stable across regeneration. |
 | `artifact.script.freeze` | `script/freeze.ts` | `abstraction,harness` | Generates the semantic-freeze report from graph coverage and certification state. |
+| `artifact.script.baseline` | `script/baseline.ts` | `harness` | Audits extracted inventories against the upstream opencode source tree. |
+| `artifact.script.integrations_commute` | `script/integrations-commute.ts` | `abstraction,harness` | Machine-checks the commuting diagrams for promoted integration witness slices. |
+| `artifact.script.integrations_certify` | `script/integrations-certify.ts` | `harness` | Builds source-first certification transcripts for integration witness slices. |
+| `artifact.script.security_commute` | `script/security-commute.ts` | `abstraction,harness` | Machine-checks the commuting diagrams for promoted security witness slices. |
+| `artifact.script.security_certify` | `script/security-certify.ts` | `harness` | Builds source-first certification transcripts for security witness slices. |
 | `artifact.script.profile_certify` | `script/profile-certify.ts` | `harness` | Aggregates case-level source-first certification transcripts into profile-level certification summaries. |
 | `artifact.script.consumer_certify` | `script/consumer-certify.ts` | `harness,environment` | Aggregates evaluated Rust and Go consumer executions into deterministic certification summaries. |
 
@@ -25,8 +30,8 @@
 
 | Class | Count |
 | --- | --- |
-| trusted_artifacts | 14 |
-| abstraction_bound | 3 |
-| harness_bound | 14 |
+| trusted_artifacts | 19 |
+| abstraction_bound | 5 |
+| harness_bound | 19 |
 | environment_bound | 4 |
 | normalization_bound | 2 |
