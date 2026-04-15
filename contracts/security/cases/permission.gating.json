@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.security.case",
-  "status": "provisional",
+  "status": "normative",
   "case_id": "witness.security.permission_gating",
   "profile_id": "security-critical",
   "world_id": "world.permission_reject_session",

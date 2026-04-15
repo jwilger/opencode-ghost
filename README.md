@@ -12,6 +12,7 @@ source tree. In practice, this repo gives you:
 - machine-checked evidence that the original `opencode` codebase satisfies the
   promoted profiles
 - downstream consumer checks in Rust and Go
+- a fully graph-backed normative artifact set with deterministic regeneration
 
 If you are approaching this as an average senior engineer, the short version is:
 
@@ -25,7 +26,7 @@ If you are approaching this as an average senior engineer, the short version is:
 
 Use this repo when you want to:
 
-- understand what parts of `opencode` are considered stable enough to specify
+- understand the current normative `opencode` surface captured here
 - inspect promoted runtime, TUI, integration, or security witness cases
 - certify that the source implementation still satisfies the ghost contracts
 - build an external implementation against a stable evaluator boundary
@@ -160,8 +161,9 @@ See [contracts/schema/conformance-kit.json](/home/jwilger/projects/opencode-ghos
 
 ### 4. Source-first certification
 
-Before a promoted artifact is treated as normative, the original `opencode`
-implementation must pass it under the same evaluator boundary.
+Promoted normative artifacts are backed by source-first certification: the
+original `opencode` implementation passes them under the same evaluator
+boundary used by downstream consumers.
 
 That evidence lives under `evidence/traceability/opencode_source.*`.
 
@@ -253,6 +255,8 @@ At the time of writing, this repository already includes:
 - Quint and Lean witness artifacts
 - deterministic regeneration checks
 - downstream consumer summaries for Rust and Go
+- zero heuristic-only tracked files in the file-classification inventory
+- a fully normative contract graph and profile matrix
 
 This means the repo is already usable as both:
 

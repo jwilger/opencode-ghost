@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.runtime.case",
-  "status": "provisional",
+  "status": "normative",
   "case_id": "witness.runtime.workspace_lifecycle",
   "profile_id": "core-runtime",
   "world_id": "world.worktree_lifecycle",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contracts.tui.certified",
-  "status": "provisional",
+  "status": "normative",
   "matrix": {
     "sizes": [
       "120x40",

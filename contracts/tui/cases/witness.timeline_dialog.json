@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.tui.case",
-  "status": "provisional",
+  "status": "normative",
   "case_id": "witness.tui.timeline_dialog",
   "profile_id": "tui-certified",
   "world_id": "world.tool_output_heavy_session",

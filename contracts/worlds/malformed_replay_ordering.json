@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.world",
-  "status": "provisional",
+  "status": "normative",
   "world_id": "world.malformed_replay_ordering",
   "kind": "adversarial",
   "setup": {

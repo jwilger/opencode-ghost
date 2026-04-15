@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.runtime.case",
-  "status": "provisional",
+  "status": "normative",
   "case_id": "witness.runtime.permission_reject",
   "profile_id": "runtime-formal",
   "world_id": "world.permission_reject_session",

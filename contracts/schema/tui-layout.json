@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "schema.tui_layout",
-  "status": "provisional",
+  "status": "normative",
   "summary": "Schema family for observable TUI layout state independent of exact cell rendering.",
   "layout": {
     "required_fields": [

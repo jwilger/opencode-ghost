@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "schema.runtime_case",
-  "status": "provisional",
+  "status": "normative",
   "summary": "Schema family for runtime conformance cases and observations.",
   "case": {
     "required_fields": [

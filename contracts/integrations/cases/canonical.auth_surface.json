@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "artifact_family": "contract.integrations.case",
-  "status": "provisional",
+  "status": "normative",
   "case_id": "witness.integrations.auth_surface",
   "profile_id": "integrations-canonical",
   "world_id": "world.shared_imported_session",

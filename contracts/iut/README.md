@@ -19,4 +19,6 @@ Design constraints:
 - explicit discriminants, ordering, and nullability
 - shared evaluator topology across runtime and TUI certification
 
-These contracts are the concrete specialization of the conformance-kit protocol. They may still become more specific, but they are already normative enough to carry promoted witness slices and profile certification.
+These contracts are the concrete specialization of the conformance-kit protocol.
+They are part of the promoted normative surface used for source-first
+certification, downstream consumer checks, and profile certification.
