@@ -7,6 +7,7 @@
 | ID | Path | Assumption strata | Note |
 | --- | --- | --- | --- |
 | `artifact.script.extract` | `script/extract.ts` | `harness,environment` | Deterministic extractor for inventories and file-level traceability. |
+| `artifact.script.file_classify` | `script/file-classify.ts` | `harness` | Generates a repository-wide tracked-file classification inventory from graph-backed paths and stable path heuristics. |
 | `artifact.script.render` | `script/render.ts` | `harness` | Generator for governance views derived from the contract graph. |
 | `artifact.script.check` | `script/check.ts` | `harness` | Validation script for JSON artifacts, graph references, and required paths. |
 | `artifact.script.commute_runtime` | `script/commute.ts` | `abstraction,harness` | Machine-checks the permission-cycle commuting diagram for the runtime witness slice. |
@@ -24,8 +25,8 @@
 
 | Class | Count |
 | --- | --- |
-| trusted_artifacts | 13 |
+| trusted_artifacts | 14 |
 | abstraction_bound | 3 |
-| harness_bound | 13 |
+| harness_bound | 14 |
 | environment_bound | 4 |
 | normalization_bound | 2 |

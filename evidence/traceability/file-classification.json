@@ -1,0 +1,1368 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_family": "evidence.file_classification",
+  "summary": {
+    "total": 190,
+    "normative": 121,
+    "informative": 18,
+    "generated": 51,
+    "graph_backed": 107,
+    "heuristic_only": 83
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "class": "informative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.doc.governance"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "OpencodeGhost.lean",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "OpencodeGhost/RuntimeWitness.lean",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.lean.runtime_witness"
+      ]
+    },
+    {
+      "path": "README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "VERIFY.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "adr/001-source-first-certification.md",
+      "class": "informative",
+      "graph_backed": true,
+      "graph_ids": [
+        "adr.001.source_first_certification"
+      ]
+    },
+    {
+      "path": "adr/002-certified-tui-observation-space.md",
+      "class": "informative",
+      "graph_backed": true,
+      "graph_ids": [
+        "adr.002.certified_tui_observation_space"
+      ]
+    },
+    {
+      "path": "adr/003-profile-certification-summaries.md",
+      "class": "informative",
+      "graph_backed": true,
+      "graph_ids": [
+        "adr.003.profile_certification_summaries"
+      ]
+    },
+    {
+      "path": "adr/004-normalization-boundary.md",
+      "class": "informative",
+      "graph_backed": true,
+      "graph_ids": [
+        "adr.004.normalization_boundary"
+      ]
+    },
+    {
+      "path": "adr/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "claims-ledger.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.claims_ledger"
+      ]
+    },
+    {
+      "path": "completeness-matrix.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.completeness_matrix"
+      ]
+    },
+    {
+      "path": "consumer/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/go-sanity/go.mod",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/go-sanity/main.go",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.consumer.go_sanity"
+      ]
+    },
+    {
+      "path": "consumer/rust-blind/.gitignore",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-blind/Cargo.lock",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-blind/Cargo.toml",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-blind/src/main.rs",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.consumer.rust_blind"
+      ]
+    },
+    {
+      "path": "consumer/rust-ref/.gitignore",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-ref/Cargo.lock",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-ref/Cargo.toml",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "consumer/rust-ref/src/main.rs",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.consumer.rust_ref"
+      ]
+    },
+    {
+      "path": "contracts/integrations/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/integrations/cases/canonical.auth_surface.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.integrations_auth_surface"
+      ]
+    },
+    {
+      "path": "contracts/integrations/cases/canonical.providers.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.integrations_providers"
+      ]
+    },
+    {
+      "path": "contracts/integrations/inventory/providers.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/iut/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/iut/runtime.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/iut/tui.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/runtime/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/runtime/cases/witness.permission_cycle.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.runtime_permission_cycle"
+      ]
+    },
+    {
+      "path": "contracts/runtime/cases/witness.permission_reject.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.runtime_permission_reject"
+      ]
+    },
+    {
+      "path": "contracts/runtime/cases/witness.workspace_lifecycle.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.runtime_workspace_lifecycle"
+      ]
+    },
+    {
+      "path": "contracts/runtime/inventory/commands.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/runtime/inventory/routes.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/conformance-kit.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/consumer-certification.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.schema.consumer_certification"
+      ]
+    },
+    {
+      "path": "contracts/schema/profile-certification.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.schema.profile_certification"
+      ]
+    },
+    {
+      "path": "contracts/schema/runtime-case.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/tui-frame.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/tui-interaction.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/schema/tui-layout.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/security/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/security/cases/path.operations.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.security_path_operations"
+      ]
+    },
+    {
+      "path": "contracts/security/cases/permission.gating.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.security_permission_gating"
+      ]
+    },
+    {
+      "path": "contracts/tui/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/tui/cases/witness.command_dialog.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_command_dialog"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.help_dialog.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_help_dialog"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.home.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_home"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.permission_view.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_permission_view"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.plugin_route_missing.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_plugin_route_missing"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.session_list_dialog.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_session_list_dialog"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.sidebar.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_sidebar"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.theme_dialog.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui_theme_dialog"
+      ]
+    },
+    {
+      "path": "contracts/tui/cases/witness.timeline_dialog.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.case.tui.timeline_dialog"
+      ]
+    },
+    {
+      "path": "contracts/tui/certified.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/tui/inventory/surfaces.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/tui/inventory/tests.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/tui/normalization.md",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/tui/terminal-assumptions.md",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/worlds/README.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "contracts/worlds/corrupted_persisted_state.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.corrupted_persisted_state"
+      ]
+    },
+    {
+      "path": "contracts/worlds/dirty_git_repo.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.dirty_git_repo"
+      ]
+    },
+    {
+      "path": "contracts/worlds/invalid_tui_interaction.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.invalid_tui_interaction"
+      ]
+    },
+    {
+      "path": "contracts/worlds/malformed_replay_ordering.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.malformed_replay_ordering"
+      ]
+    },
+    {
+      "path": "contracts/worlds/mid_run_cancellation.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.mid_run_cancellation"
+      ]
+    },
+    {
+      "path": "contracts/worlds/minimal_repo.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.minimal_repo"
+      ]
+    },
+    {
+      "path": "contracts/worlds/partial_stream_disconnect.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.partial_stream_disconnect"
+      ]
+    },
+    {
+      "path": "contracts/worlds/path_traversal_request.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.path_traversal_request"
+      ]
+    },
+    {
+      "path": "contracts/worlds/permission_reject_session.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.permission_reject_session"
+      ]
+    },
+    {
+      "path": "contracts/worlds/permission_session.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.permission_session"
+      ]
+    },
+    {
+      "path": "contracts/worlds/shared_imported_session.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.shared_imported_session"
+      ]
+    },
+    {
+      "path": "contracts/worlds/tool_output_heavy_session.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.tool_output_heavy_session"
+      ]
+    },
+    {
+      "path": "contracts/worlds/worktree_lifecycle.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "world.worktree_lifecycle"
+      ]
+    },
+    {
+      "path": "evidence/traceability/baseline.json",
+      "class": "generated",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "evidence/traceability/commuting.integrations.auth_surface.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.integrations_auth_surface_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.integrations.providers.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.integrations_providers_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.runtime.permission_cycle.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.runtime_permission_cycle_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.runtime.permission_reject.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.runtime_permission_reject_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.runtime.workspace_lifecycle.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.runtime_workspace_lifecycle_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.security.path_operations.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.security_path_operations_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.security.permission_gating.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.security_permission_gating_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.command_dialog.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_command_dialog_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.help_dialog.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_help_dialog_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.home.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_home_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.permission_view.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_permission_view_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.plugin_route_missing.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_plugin_route_missing_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.session_list_dialog.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_session_list_dialog_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.sidebar.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_sidebar_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.theme_dialog.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui_theme_dialog_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/commuting.tui.timeline_dialog.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.tui.timeline_dialog_commuting"
+      ]
+    },
+    {
+      "path": "evidence/traceability/consumer.go_sanity.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.consumer_go_sanity"
+      ]
+    },
+    {
+      "path": "evidence/traceability/consumer.rust_blind.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.consumer_rust_blind"
+      ]
+    },
+    {
+      "path": "evidence/traceability/consumer.rust_reference.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.consumer_rust_reference"
+      ]
+    },
+    {
+      "path": "evidence/traceability/files.jsonl",
+      "class": "generated",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "evidence/traceability/opencode_source.core_runtime.workspace_lifecycle.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_core_runtime_workspace_lifecycle_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.integrations_canonical.auth_surface.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_integrations_auth_surface_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.integrations_canonical.providers.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_integrations_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.core_runtime.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile_core_runtime"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.full_reference.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile.full_reference"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.integrations_canonical.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile.integrations_canonical"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.runtime_formal.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile_runtime_formal"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.security_critical.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile.security_critical"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.profile.tui_certified.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.profile.tui_certified"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.runtime_formal.permission_cycle.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_runtime_formal_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.runtime_formal.permission_reject.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_runtime_formal_reject_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.security_critical.path_operations.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_security_path_operations_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.security_critical.permission_gating.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_security_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.command_dialog.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_command_dialog_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.help_dialog.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_help_dialog_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.home.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_home_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.permission_view.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.plugin_route_missing.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_plugin_route_missing_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.session_list_dialog.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_session_list_dialog_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.sidebar.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_sidebar_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.theme_dialog.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified_theme_dialog_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/opencode_source.tui_certified.timeline_dialog.jsonl",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.opencode_tui_certified.timeline_dialog_transcript"
+      ]
+    },
+    {
+      "path": "evidence/traceability/semantic-freeze.json",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.evidence.semantic_freeze"
+      ]
+    },
+    {
+      "path": "flake.lock",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "flake.nix",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "formalization-inventory.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.formalization_inventory"
+      ]
+    },
+    {
+      "path": "graph/contract-graph.jsonl",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.graph.contract_graph"
+      ]
+    },
+    {
+      "path": "graph/schema/contract-graph.schema.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.graph.contract_graph_schema"
+      ]
+    },
+    {
+      "path": "lakefile.toml",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "lean-toolchain",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "model/runtime/kernel.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "model/tui/seed.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "refinement-ledger.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.refinement_ledger"
+      ]
+    },
+    {
+      "path": "rust-ergonomics-report.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.rust_ergonomics"
+      ]
+    },
+    {
+      "path": "script/baseline.ts",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/certify.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.certify_runtime"
+      ]
+    },
+    {
+      "path": "script/check.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.check"
+      ]
+    },
+    {
+      "path": "script/commute.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.commute_runtime"
+      ]
+    },
+    {
+      "path": "script/consumer-certify.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.consumer_certify"
+      ]
+    },
+    {
+      "path": "script/determinism.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.determinism"
+      ]
+    },
+    {
+      "path": "script/extract.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.extract"
+      ]
+    },
+    {
+      "path": "script/freeze.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.freeze"
+      ]
+    },
+    {
+      "path": "script/integrations-certify.ts",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/integrations-commute.ts",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/normalize.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.normalize"
+      ]
+    },
+    {
+      "path": "script/profile-certify.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.profile_certify"
+      ]
+    },
+    {
+      "path": "script/render.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.render"
+      ]
+    },
+    {
+      "path": "script/security-certify.ts",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/security-commute.ts",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/tui-certify.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.certify_tui"
+      ]
+    },
+    {
+      "path": "script/tui-commute.ts",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.commute_tui"
+      ]
+    },
+    {
+      "path": "script/verify/10-extract.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/100-normalize.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/11-render.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/110-integrations.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/120-security.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/130-determinism.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/140-freeze.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/145-profile-certify.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/150-rust-ref.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/160-go-sanity.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/170-rust-blind.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/175-consumer-certify.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/20-check.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/30-baseline.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/40-quint.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/50-lean.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/60-commute.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/70-certify.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/80-tui-commute.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "script/verify/90-tui-certify.sh",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "semantic-coverage-report.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.semantic_coverage"
+      ]
+    },
+    {
+      "path": "spec-audit.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "spec/runtime_witness.qnt",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.spec.runtime_witness"
+      ]
+    },
+    {
+      "path": "tcb-inventory.md",
+      "class": "generated",
+      "graph_backed": true,
+      "graph_ids": [
+        "report.tcb_inventory"
+      ]
+    },
+    {
+      "path": "tests/normalization/runtime.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.test.normalization_runtime"
+      ]
+    },
+    {
+      "path": "tests/normalization/tui.json",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.test.normalization_tui"
+      ]
+    },
+    {
+      "path": "tests/runtime/permission_cycle.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/runtime/permission_reject.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/runtime/workspace_lifecycle.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/command_dialog.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/help_dialog.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/home.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/permission_view.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/plugin_route_missing.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/session_list_dialog.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/sidebar.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/theme_dialog.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "tests/tui/timeline_dialog.json",
+      "class": "normative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "trust-base.md",
+      "class": "informative",
+      "graph_backed": false,
+      "graph_ids": []
+    },
+    {
+      "path": "verify-all",
+      "class": "normative",
+      "graph_backed": true,
+      "graph_ids": [
+        "artifact.script.verify_all"
+      ]
+    }
+  ]
+}

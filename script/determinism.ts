@@ -28,6 +28,7 @@ const snap = async () => {
     "rust-ergonomics-report.md",
     "semantic-coverage-report.md",
     "tcb-inventory.md",
+    "evidence/traceability/file-classification.json",
     ...(await list("evidence/traceability/commuting.runtime.*.json")),
     ...(await list("evidence/traceability/commuting.tui.*.json")),
     ...(await list("evidence/traceability/commuting.integrations.*.json")),
@@ -63,6 +64,7 @@ const main = async () => {
   await run(["bun", "script/integrations-certify.ts", "--write"])
   await run(["bun", "script/security-commute.ts", "--write"])
   await run(["bun", "script/security-certify.ts", "--write"])
+  await run(["bun", "script/file-classify.ts", "--write"])
   await run(["bun", "script/freeze.ts", "--write"])
   await run(["bun", "script/profile-certify.ts", "--write"])
   await run(["bun", "script/consumer-certify.ts", "--write"])
